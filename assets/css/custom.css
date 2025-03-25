@@ -1,0 +1,383 @@
+
+.post,
+.page {
+    margin-bottom: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Alexandria", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    font-family: "Alexandria", sans-serif;
+}
+
+h1,
+.h1 {
+    color: #FFF;
+    font-family: "Alexandria", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h2,
+.h2 {
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: "Alexandria", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+
+h3,
+.h3 {
+    color: #FFF;
+    font-family: "Alexandria", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h4,
+.h4 {
+    color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+h5,
+.h5 {
+    color: #000;
+    font-family: "Alexandria", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+h6,
+.h6 {
+    font-family: "Alexandria", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background: var(--Pink-Orange, linear-gradient(147deg, #FF0062 19.73%, #F60 78.34%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+h1 span,
+.h1 span,
+h2 span,
+.h2 span,
+h3 span,
+.h3 span,
+h4 span,
+.h4 span,
+h5 span,
+.h5 span {
+    background: var(--Pink-Orange, linear-gradient(147deg, #FF0062 19.73%, #F60 78.34%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+
+p {
+    color: #FFF;
+    font-family: "Alexandria", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+section{
+    margin: 80px 0;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+.container{
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+}
+
+ul,
+ol {
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+li {
+    color: #FFF;
+    font-family: "Alexandria", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #FFBF00;
+    outline: none !important;
+}
+
+.post-thumbnail {
+    position: relative;
+    padding-bottom: 44%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.post-thumbnail img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+a:hover {
+    color: #FFBF00;
+}
+
+.column-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #FFBF00;
+}
+
+.gradient{
+    background: linear-gradient(90deg, #FFBF00 0%, #FF0062 100%), #000;
+}
+
+.defualt_btn,
+input[type="submit"],
+[type="submit"] {
+    padding: 10px  20px;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: all 0.6s ease-in-out;
+    border: 2px solid transparent;
+    background: #FFBF00;
+}
+
+.defualt_btn:hover,
+[type="submit"]:hover,
+input[type="submit"]{
+    background-color: transparent;
+    border: 2px solid #000;
+}
+.defualt_btn.border-cta{
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+.defualt_btn.border-cta:hover{
+    background: #FFBF00;
+    color: #000;
+}
+.slick-arrow {
+    height: 48px;
+    width: 48px;
+    font-size: 0;
+    background-color: #FFBF00;
+    border: 1px solid #FFBF00;
+    outline: none;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.6s;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slick-prev {
+    left: 0;
+    background-image: url(../images/left-arrow.svg);
+}
+
+.slick-next {
+    right: 0;
+    background-image: url(../images/right-arrow-white.svg);
+}
+.slick-next.slick-disabled {
+    background-color: var(--bg-white);
+    background-image: url(../images/right-arrow.svg);
+    border: 1px solid #FFBF00;
+}
+.slick-prev.slick-disabled {
+    background-color: var(--bg-white);
+    background-image: url(../images/left-arrow-black.svg);
+    border: 1px solid #FFBF00;
+}
+
+ul.slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: flex;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.slick-dots li button {
+    height: 0;
+    width: 0;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    background: 0;
+    box-shadow: unset;
+}
+
+ul.slick-dots li {
+    list-style-type: none;
+    width: 40px;
+    background: #FFBF00;
+    height: 4px;
+    margin: 0 8px;
+    border-radius: 4px;
+}
+
+ul.slick-dots li.slick-active {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+}
+
+
+.toggle_menu span {
+    display: block;
+    width: 30px;
+    background: var(--text-black);
+    height: 2px;
+    margin: 6px 0;
+    transition: all 0.6s;
+    position: relative;
+}
+
+.toggle_menu {
+    display: none;
+    margin-left: 30px;
+}
+
+.title_block {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+input[type="text"],
+input[type="email"], 
+input[type="number"], 
+input[type="tel"],
+input[type="url"],
+textarea {
+    padding: 24px;
+    width: 100%;
+    font-size: 14px;
+    line-height: normal;
+    background: var(--bg-white);
+    border-radius: 12px;
+    outline: none;
+    border: 0;
+    color: #000000;
+    font-family: var(--main-font-family);
+}
+textarea{
+    height: 112px;
+}
+
+/*************************************************
+                 Responsive Css
+ *************************************************/
+
+ @media only screen and (min-width:576px) {
+
+    .container{
+        max-width: 540px
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    .container {
+        max-width: 720px
+    }
+}
+
+@media only screen and (min-width:992px) {
+
+    .container{
+        max-width: 960px
+    }
+   
+}
+
+@media only screen and (min-width:1200px) {
+
+    .container{
+        max-width: 1140px
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    .container {
+        max-width: 1248px
+    }
+}
