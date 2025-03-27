@@ -1,3 +1,4 @@
+
 .post,
 .page {
     margin-bottom: 0;
@@ -35,7 +36,7 @@ h1,
     font-size: 80px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1;
+    line-height: normal;
     margin-bottom: 30px;
     margin-top: 0;
 }
@@ -49,10 +50,10 @@ h2,
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1;
+    line-height: normal;
     margin-bottom: 30px;
     margin-top: 0;
-}
+    }
 
 h3,
 .h3 {
@@ -89,7 +90,6 @@ h5,
     line-height: normal;
     margin-top: 0;
 }
-
 h6,
 .h6 {
     font-family: "Alexandria", sans-serif;
@@ -137,16 +137,14 @@ p {
     font-weight: 400;
     line-height: normal;
 }
-
-section {
+section{
     margin: 80px 0;
 }
-
 p:last-child {
     margin-bottom: 0;
 }
 
-.container {
+.container{
     margin: 0 auto;
     padding-left: 24px;
     padding-right: 24px;
@@ -172,7 +170,7 @@ a {
     text-decoration: none;
     color: #FFBF00;
     outline: none !important;
-    transition: all 0.6s;
+    transition:  all 0.6s;
 }
 
 .post-thumbnail {
@@ -192,11 +190,9 @@ a {
 a:hover {
     color: #FFBF00;
 }
-
 a:visited {
     color: unset;
 }
-
 .column-row {
     display: flex;
     flex-wrap: wrap;
@@ -209,7 +205,7 @@ a:active {
     color: #FFBF00;
 }
 
-.gradient {
+.gradient{
     background: linear-gradient(90deg, #FFBF00 0%, #FF0062 100%), #000;
 }
 
@@ -217,7 +213,7 @@ a:active {
 input[type="submit"],
 [type="submit"],
 .ff-btn-submit {
-    padding: 10px 20px;
+    padding: 10px  20px;
     color: #000;
     font-size: 18px;
     font-style: normal;
@@ -229,46 +225,31 @@ input[type="submit"],
     background: #FFBF00;
     display: inline-block;
 }
-
 .ff-btn-submit {
     width: 100%;
 }
-
 .defualt_btn:hover,
 [type="submit"]:hover,
 input[type="submit"]:hover,
-.ff-btn-submit:hover {
+.ff-btn-submit:hover
+{
     background-color: transparent;
     border: 2px solid #000;
 }
-
-.defualt_btn.border-cta {
+.defualt_btn.border-cta{
     background-color: transparent;
     border: 2px solid transparent;
 }
-
-.defualt_btn.border-cta:hover {
+.defualt_btn.border-cta:hover{
     background: #FFBF00;
     color: #000;
 }
-
-button:active,
-button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-    border-color: transparent;
-}
-
 .slick-arrow {
     height: 48px;
     width: 48px;
     font-size: 0;
-    background: #FFBF00;
-    border: 2px solid #FFBF00;
+    background-color: #FFBF00;
+    border: 1px solid #FFBF00;
     outline: none;
     border-radius: 8px;
     position: absolute;
@@ -280,24 +261,25 @@ input[type="submit"]:focus {
     z-index: 1;
     cursor: pointer;
     border-radius: 50%;
-    outline: 0;
-}
-
-.slick-arrow:hover {
-    background-color: transparent;
-    border-color: #fff;
-}
-
-.slick-arrow:hover svg path {
-    stroke: #fff;
 }
 
 .slick-prev {
     left: 0;
+    background-image: url(../images/left-arrow.svg);
 }
-
 .slick-next {
     right: 0;
+    background-image: url(../images/arrow-next.svg);
+}
+.slick-next.slick-disabled {
+    background-color: var(--bg-white);
+    background-image: url(../images/right-arrow.svg);
+    border: 1px solid #FFBF00;
+}
+.slick-prev.slick-disabled {
+    background-color: var(--bg-white);
+    background-image: url(../images/left-arrow-black.svg);
+    border: 1px solid #FFBF00;
 }
 
 ul.slick-dots {
@@ -359,8 +341,8 @@ ul.slick-dots li.slick-active {
 
 
 
-input[type="text"],
-input[type="email"],
+input[type="text"], 
+input[type="email"], 
 input[type="number"],
 input[type="tel"],
 input[type="url"],
@@ -381,55 +363,44 @@ body .ff-default .ff-el-form-control {
     background-position: center left;
     background-size: 20px;
 }
-
 body .fluentform .ff-el-group {
     margin-bottom: 30px;
 }
-
 body .fluentform .ff-el-group.ff_submit_btn_wrapper {
     margin-bottom: 0;
 }
-
-.ff-default input[type="text"].ff-el-form-control {
+.ff-default input[type="text"].ff-el-form-control{
     background-image: url(../images/user.svg);
 }
-
-.ff-default input[type="email"].ff-el-form-control {
+.ff-default input[type="email"].ff-el-form-control{
     background-image: url(../images/mail.svg);
 }
-
-.ff-default input[type="tel"].ff-el-form-control {
+.ff-default input[type="tel"].ff-el-form-control{
     background-image: url(../images/phone-receiver.svg);
 }
-
 .ff-default select.ff-el-form-control {
     background-image: url(../images/chevron-down-yellow.svg);
     padding: 11.5px 30px 11.5px 0px;
     background-position: right center;
     appearance: none;
 }
-
-.ff-default input[type="text"].ff-el-form-control.ff-el-datepicker {
+.ff-default input[type="text"].ff-el-form-control.ff-el-datepicker{
     background-image: url(../images/calendar.svg);
 }
-
-.ff-default input[type="tel"].ff-el-form-control.input-postcode {
+.ff-default input[type="tel"].ff-el-form-control.input-postcode{
     background-image: url(../images/maps-and-flags.svg);
 }
-
-body .ff-default .ff-btn-lg {
+body .ff-default .ff-btn-lg{
     border-radius: 0;
 }
-
 textarea,
-.ff-default textarea.ff-el-form-control {
+.ff-default textarea.ff-el-form-control{
     height: 112px;
     border-radius: 10px;
     padding: 16px;
     border: 1px solid #000;
     resize: none;
 }
-
 body .ff-default .ff-el-input--label label {
     color: #000;
     font-weight: 400;
@@ -438,60 +409,17 @@ body .ff-default .ff-el-input--label label {
 }
 
 
-/* Breadcrumbs CSS Start*/
-.home .breadcrumb_sec {
-    display: none
-}
-
-.breadcrumb {
-    display: inline-flex;
-    align-items: center;
-    flex-wrap: wrap;
-    list-style-type: none;
-    margin: 0
-}
-
-.breadcrumb-sec {
-    background-color: #000;
-    padding: 15px 0;
-    border-top: solid 1px rgba(255, 255, 255, .3);
-    border-bottom: solid 1px rgba(255, 255, 255, .3)
-}
-
-.breadcrumb li:hover a {
-    color: #ffbf00
-}
-
-.breadcrumb li {
-    position: relative;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    padding: 3px 10px
-}
-
-.breadcrumb li:first-child {
-    padding-left: 0
-}
-
-.breadcrumb li:not(:first-child):before {
-    content: "/";
-    display: block;
-    position: absolute;
-    left: -2px;
-    top: 3px;
-    font-size: 14px
-}
-
-.breadcrumb .breadcrumb-item a {
-    color: #fff;
-    font-weight: 700
-}
-
-/* Breadcrumbs CSS End*/
-
+ /* Breadcrumbs CSS Start*/
+ .home .breadcrumb_sec{display:none}
+ .breadcrumb{display:inline-flex;align-items:center;flex-wrap:wrap;list-style-type:none;margin:0}
+ .breadcrumb-sec{background-color:#000;padding:15px 0;border-top:solid 1px rgba(255,255,255,.3);border-bottom:solid 1px rgba(255,255,255,.3)}
+ .breadcrumb li:hover a{color:#ffbf00}
+ .breadcrumb li{position:relative;color:#fff;font-size:14px;font-weight:700;line-height:normal;text-transform:uppercase;padding:3px 10px}
+ .breadcrumb li:first-child{padding-left:0}
+ .breadcrumb li:not(:first-child):before{content:"/";display:block;position:absolute;left:-2px;top:3px;font-size:14px}
+ .breadcrumb .breadcrumb-item a{color:#fff;font-weight:700}
+ /* Breadcrumbs CSS End*/
+ 
 
 /*************************************************
                  header Css
@@ -500,57 +428,47 @@ body .ff-default .ff-el-input--label label {
 header {
     background-color: #000000;
 }
-
 header .topbar {
     background: linear-gradient(90deg, #FFBF00 0%, #FF0062 100%);
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
 }
-
 .topbar-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.topbar-row>* {
+.topbar-row > * {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .topbar-row a {
     color: #ffffff;
     position: relative;
 }
-
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .location a:not(:first-child):before {
     margin-right: 0;
     padding-right: 5px;
     content: "|";
 }
-
 .user-info a img {
     vertical-align: middle;
     height: 20px;
     width: 20px;
     margin-right: 5px;
 }
-
 .user-info a {
     font-weight: 700;
 }
-
-.user-info>:not(:last-child) {
+.user-info >:not(:last-child) {
     margin-right: 20px;
 }
-
 .sticky-header {
     padding: 20px 0;
 }
@@ -558,19 +476,16 @@ header .topbar {
 .header-navigation .menu li {
     position: relative;
 }
-
-.header-navigation .menu>li {
+.header-navigation  .menu  > li {
     display: inline-block;
 }
-
 .header-navigation .menu {
     margin: 0;
 }
 
-.header-navigation .menu>li:not(:first-child) {
+.header-navigation .menu > li:not(:first-child) {
     margin-left: 20px;
 }
-
 .header-navigation .menu li a {
     color: #ffffff;
     font-weight: 700;
@@ -578,7 +493,6 @@ header .topbar {
     font-size: 16px;
     transition: all 0.6s;
 }
-
 .toggle {
     background: #FFBF00;
     height: 45px;
@@ -600,7 +514,6 @@ header .topbar {
     margin-left: 40px;
     flex-shrink: 0;
 }
-
 .menu-item-has-children .arrows {
     background-image: url(../images/chevron-down.svg);
     background-repeat: no-repeat;
@@ -614,7 +527,6 @@ header .topbar {
     cursor: pointer;
     background-color: var(--light-blue);
 }
-
 .sub-menu {
     position: absolute;
     margin-left: 0;
@@ -627,29 +539,23 @@ header .topbar {
     overflow: hidden;
     z-index: 2;
 }
-
 .sub-menu li {
     display: block;
 }
-
-.header-navigation .menu>li {
+.header-navigation  .menu  > li {
     display: inline-block;
 }
-
 .sub-menu li {
     margin-left: 0;
 }
-
 .sub-menu a {
     display: block;
     padding: 10px 15px;
 }
-
-.menu-item-has-children>a {
+.menu-item-has-children > a {
     padding-right: 25px;
 }
-
-.header-navigation .menu>li:hover .sub-menu {
+.header-navigation .menu > li:hover .sub-menu {
     visibility: visible;
     opacity: 1;
 }
@@ -658,15 +564,13 @@ header .topbar {
                  Footer Css
  *************************************************/
 
-.footer-top {
+ .footer-top {
     padding: 60px 0;
 }
-
 .footer-logo {
     text-align: right;
     margin-bottom: 80px;
 }
-
 .footer-main {
     display: flex;
     justify-content: space-between;
@@ -681,7 +585,6 @@ header .topbar {
     display: flex;
     justify-content: space-between;
 }
-
 .footer-info .user-info a {
     display: flex;
     color: #000000;
@@ -693,64 +596,51 @@ header .topbar {
     margin-bottom: 10px;
     margin-right: 0;
 }
-
 .social-link {
     display: flex;
     align-items: center;
     margin-top: 50px;
 }
-
 .social-link h5 {
     max-width: 169px;
     font-weight: 500;
     margin-right: 20px;
 }
-
 .social-link a:not(:first-child) {
     margin-left: 10px;
 }
-
-.social-link a img {
+.social-link a img{
     vertical-align: middle;
 }
-
 .footer-link .menu {
     margin-left: 0;
 }
-
 .footer-link .menu li a {
     color: #000;
     transition: all 0.6s;
 }
-
-.footer-link .menu li a:hover {
+.footer-link .menu li a:hover{
     color: #FFBF00;
 }
-
 .footer-link .menu li:not(:last-child) {
     margin-bottom: 10px;
 }
-
 .location-main-row {
     display: flex;
 }
-
 .location-main-row .location-shape {
     width: 20%;
     margin-right: 30px;
 }
-
 .location-main-row .location-row {
     width: 67%;
     padding: 30px 0;
 }
-
 .location-main-row .location-shape img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
 .footer-location {
     background: linear-gradient(90deg, #FF0062 0%, #FFBF00 78.59%), #FF3700;
     text-align: center;
@@ -784,8 +674,7 @@ header .topbar {
     padding: 24px 0;
 }
 
-.footer-bottom-row p,
-.footer-bottom-row a {
+.footer-bottom-row p,.footer-bottom-row a {
     color: #000000;
     font-weight: 300;
 }
@@ -793,7 +682,6 @@ header .topbar {
 .footer-bottom-row p {
     margin-bottom: 0;
 }
-
 .footer-bottom-row a strong {
     text-transform: uppercase;
     font-weight: 600;
@@ -808,9 +696,9 @@ header .topbar {
                  Responsive Css
  *************************************************/
 
-@media only screen and (min-width:576px) {
+ @media only screen and (min-width:576px) {
 
-    .container {
+    .container{
         max-width: 540px
     }
 }
@@ -820,7 +708,6 @@ header .topbar {
     .container {
         max-width: 720px
     }
-
     .footer-location .container {
         max-width: 100%;
         padding: 0;
@@ -829,10 +716,9 @@ header .topbar {
 
 @media only screen and (min-width:992px) {
 
-    .container {
+    .container{
         max-width: 960px
     }
-
     .header-navigation .sub-menu li a:hover {
         background: #FFBF00;
     }
@@ -840,7 +726,7 @@ header .topbar {
 
 @media only screen and (min-width:1200px) {
 
-    .container {
+    .container{
         max-width: 1140px
     }
 }
@@ -849,47 +735,37 @@ header .topbar {
     .container {
         max-width: 1248px
     }
-
     .site-header .container {
         max-width: 1308px;
     }
 }
 
-@media only screen and (max-width:1399px) {
+@media only screen and (max-width:1399px){
     body {
         font-size: 16px;
     }
-
     li {
         font-size: 16px;
     }
-
-    p {
+    p{
         font-size: 16px;
     }
-
     .site-branding {
         max-width: 230px;
     }
-
-    .defualt_btn,
-    input[type="submit"],
-    [type="submit"] {
+    .defualt_btn, input[type="submit"], [type="submit"] {
         font-size: 16px;
         padding: 10px 15px;
     }
-
     /*************************************************
                  Header Css
     *************************************************/
     .header-main .defualt-btn {
         margin-left: 20px;
     }
-
-    .header-navigation .menu>li:not(:first-child) {
+    .header-navigation .menu > li:not(:first-child) {
         margin-left: 10px;
     }
-
     .header-navigation .menu li a {
         font-size: 14px;
     }
@@ -898,48 +774,35 @@ header .topbar {
         width: 23%;
     }
 }
-
-@media only screen and (min-width:992px) and (max-width:1199px) {
+@media only screen and (min-width:992px) and (max-width:1199px){
     .site-branding {
         max-width: 180px;
     }
-
     .header-navigation .menu li a {
         font-size: 12px;
     }
-
-    .header-navigation .menu>li:not(:first-child) {
+    .header-navigation .menu > li:not(:first-child) {
         margin-left: 5px;
     }
-
     .header-main .defualt_btn {
         font-size: 14px;
         padding: 10px 10px;
     }
-
     .menu-item-has-children .arrows {
         height: 15px;
         width: 15px;
     }
 }
-
-@media only screen and (max-width:1199px) {
-
-    h1, .h1,
-    h2, .h2{
-        font-size: 50px;
-        margin-bottom: 20px;
-    }
+@media only screen and (max-width:1199px){
 
     /*************************************************
                  Header Css
     *************************************************/
 
-    .user-info>:not(:last-child) {
+    .user-info >:not(:last-child) {
         margin-right: 10px;
     }
-
-    .topbar-row>* {
+    .topbar-row > * {
         font-size: 14px;
     }
 
@@ -949,36 +812,26 @@ header .topbar {
     .location-main-row .location-shape {
         width: 28%;
     }
-
     .footer-main .footer-navigation {
         width: 55%;
     }
 }
-
-@media only screen and (max-width:991px) {
-
+@media only screen and (max-width:991px){
     /*************************************************
                  Header Css
     *************************************************/
-    section{
-        margin: 50px 0;
-    }
     .toggle {
         display: flex;
     }
-
-    .header-navigation .menu>li {
+    .header-navigation  .menu  > li {
         display: block;
     }
-
-    .header-navigation .menu>li:not(:first-child) {
+    .header-navigation .menu > li:not(:first-child) {
         margin-left: 0;
     }
-
-    .header-navigation .menu>li:not(:last-child) {
+    .header-navigation .menu > li:not(:last-child) {
         margin-bottom: 20px;
     }
-
     .header-main {
         display: flex;
         align-items: center;
@@ -996,29 +849,24 @@ header .topbar {
         overflow: auto;
         z-index: 1;
     }
-
     body.menu-open .header-main {
         transform: translateX(0);
     }
-
     .header-navigation .menu li a {
         font-size: 32px;
         text-transform: capitalize;
         font-weight: 500;
     }
-
     .close-btn {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
     }
-
     .header-main .defualt-btn {
         margin-left: 0;
         margin-top: 60px;
         text-align: center;
     }
-
     .menu-item-has-children .arrows {
         background-image: url(../images/pluse.svg);
         background-size: contain;
@@ -1026,29 +874,25 @@ header .topbar {
         height: 16px;
         width: 16px;
     }
-
-    .menu-item-has-children .arrows.active {
+    .menu-item-has-children .arrows.active{
         background-image: url(../images/minus.svg);
     }
-
     .menu-item-has-children {
         padding-right: 25px;
     }
-
-    .header-navigation .menu li .sub-menu a {
+    .header-navigation .menu li .sub-menu  a {
         font-size: 28px;
         font-weight: 400;
         padding: 0 20px 20px;
     }
-
+    
     .header-navigation .menu li .sub-menu li:last-child a {
         border-bottom: 1px solid rgba(255, 255, 255, 0.50);
     }
-
+    
     .header-navigation .menu li .sub-menu {
         margin-top: 20px;
     }
-
     .sub-menu {
         position: static;
         visibility: visible;
@@ -1056,15 +900,13 @@ header .topbar {
         background: transparent;
         display: none;
     }
-
     .topbar-row {
         justify-content: center;
     }
-
     .topbar-row .reviews-text {
         display: none;
     }
-
+    
     .topbar-row .user-info {
         display: none;
     }
@@ -1078,116 +920,96 @@ header .topbar {
         max-width: 334px;
         width: 100%;
     }
-
     .footer-main .footer-info {
         width: 100%;
         margin-top: 40px;
     }
-
     .footer-main {
         flex-direction: column-reverse;
     }
-
     .footer-main .footer-navigation {
         width: 100%;
     }
-
     .social-link {
         margin-top: 27px;
     }
-
     .footer-location .location-row {
         margin-bottom: -40px;
     }
-
     .footer-location .location-row a {
         width: 30%;
         margin-bottom: 40px;
     }
-
     .location-main-row .location-shape {
         display: none;
     }
-
     .location-main-row {
         display: flex;
         justify-content: center;
     }
 }
-
-@media only screen and (max-width:767px) {
-
+@media only screen and (max-width:767px){
+    
     /*************************************************
                  Footer  Css
     *************************************************/
-    .footer-main .footer-navigation {
+    .footer-main .footer-navigation{
         flex-wrap: wrap;
     }
-
+   
     .footer-link {
         width: 47%;
         margin-bottom: 40px;
     }
-
     .footer-main .footer-info {
         margin-top: 0;
     }
-
     .social-link {
         display: block;
     }
-
     .social-link a:not(:first-child) {
         margin-left: 0;
     }
-
     .social-link a:not(:last-child) {
         margin-right: 10px;
     }
-
     .social-link h5 {
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
-
+  
     .footer-location .location-row a {
         width: 46%;
     }
-
     .location-main-row .location-row {
         width: 100%;
     }
 }
 
-@media only screen and (max-width:374px) {
+@media only screen and (max-width:374px){
     .footer-info .user-info a {
         font-size: 13px;
     }
-
     .social-link h5 {
         font-size: 16px;
     }
-
     .footer-main .footer-navigation>div:nth-child(2) {
         order: 3;
     }
-
     .footer-main .footer-navigation>div:nth-child(4) {
         order: 2;
     }
-
     .footer-main .footer-navigation>div:nth-child(3) {
         order: 4;
     }
-
     .footer-bottom-row {
         display: block;
         text-align: center;
     }
-
+   
     .footer-bottom-row p {
         margin-bottom: 40px;
     }
-
+   
 }

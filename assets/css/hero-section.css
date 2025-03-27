@@ -1,0 +1,122 @@
+.hero-section {
+    position: relative;
+    min-height: 880px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero-section .video-wraper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.hero-section .video-wraper iframe {
+    height: 100%;
+    width: 100%;
+}
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h4 {
+    color: #fff;
+}
+
+.hero-content h1 {
+    text-transform: uppercase;
+    font-size: 120px;
+}
+.hero-content h1 span {
+    -webkit-text-stroke-width: 1.95px;
+    -webkit-text-stroke-color: #FFF;
+    background: transparent;
+}
+.hero_items_wraper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
+.hero_items_wraper .hero_item {
+    width: 33.33%;
+    padding: 0 20px;
+}
+
+.hero_items_wraper .hero_item .hero_items_bottom {
+    background: #ffffff;
+    padding: 10px;
+    position: relative;
+}
+
+.hero_items_wraper .hero_item .hero_items_top {
+    background: #ffffff;
+    border-bottom: 4px solid #000000;
+    padding: 0px 0;
+}
+
+.hero_items_wraper .hero_item .hero_items_box {
+    transform: rotate(-3.557deg);
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.hero_items_wraper .hero_item .hero_items_top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.hero_items_wraper .hero_item .hero_items_bottom .hero_img {
+    position: relative;
+    padding-bottom: 56.25%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero_items_wraper .hero_item .hero_items_bottom .hero_img img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero_items_wraper .hero_item .hero_items_bottom .hero_img .hero-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding: 10px;
+}
+
+.hero_items_wraper .hero_item .hero_items_bottom .hero_img .hero-content h6 {
+    color: #ffffff;
+}
+
+.hero_items_wraper .hero_item .hero_items_bottom .hero_img .hero-content h5 {
+    color: #ffffff;
+}
+.hero_items_wraper .hero_item .hero_items_bottom .hero_img .hero_arrow {
+    position: absolute;
+    height: 52px;
+    width: 52px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -1px;
+    right: -1px;
+    border-radius: 12px 0 0;
+}
+
+.hero_items_wraper .hero_item .hero_items_bottom .hero_img .hero_arrow img {
+    object-fit: contain;
+    padding: 9px;
+}

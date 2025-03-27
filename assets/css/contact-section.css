@@ -75,9 +75,7 @@
     }
 }
 @media only screen and (max-width:1199px){
-    h2, .h2{
-        font-size: 50px;
-    }
+   
 }
 @media only screen and (max-width:991px){
     .contact_info .column-row {

@@ -1,14 +1,37 @@
-.inner-banner-sec {
-    background-color: #000;
-    margin: 0;
-    padding: 70px 0;
+.inner-banner-sec{background-color:#000;margin:0;padding:70px 0}
+.inner-banner-text h2{color:#fff;margin-bottom:20px}
+.inner-banner-text p{margin-bottom:20px}
+.text-with-slider .wrapper{display:flex;flex-wrap:wrap;justify-content:space-between}
+.text-with-slider .wrapper .left-col{width:41.7%}
+.text-with-slider .wrapper .right-col{width:50%}
+.inner-image-slider .image{position:relative;padding-bottom:42%}
+.inner-image-slider .image img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+.text-with-slider .wrapper .left-col .text h2{color:#fff;font-weight:600;margin-bottom:20px}
+.text-with-slider .wrapper .right-col .slick-arrow{left:20px;bottom:20px;top:auto;transform:unset}
+.text-with-slider .wrapper .right-col .slick-arrow.slick-next{margin-left:58px}
+
+@media only screen and (min-width:1400px){
+    .text-with-slider .wrapper .right-col .inner-image-slider{margin-right:calc(-100vw / 2 + 1200px / 2)}
 }
 
-.inner-banner-text h1:last-child {
-    margin-bottom: 0;
+@media only screen and (max-width:1399px){
+    .text-with-slider .wrapper .right-col .inner-image-slider{margin-right:calc(-100vw / 2 + 1092px / 2)}
 }
 
-.inner-banner-text h2 {
-    color: #fff;
-    margin-bottom: 20px;
+@media only screen and (max-width:1199px){
+    .inner-banner-sec{padding:50px 0}
+    .text-with-slider .wrapper .right-col .inner-image-slider{margin-right:calc(-100vw / 2 + 912px / 2)}
+    .text-with-slider .wrapper .right-col{width:55%}
+    .inner-image-slider .image{padding-bottom:50%}
+}
+
+@media only screen and (max-width:991px){
+    .inner-banner-sec h1{font-size:48px}
+    .text-with-slider .wrapper .left-col{margin-bottom:30px}
+    .text-with-slider .wrapper .left-col,.text-with-slider .wrapper .right-col{width:100%}
+    .text-with-slider .wrapper .right-col .inner-image-slider{margin:0}
+}
+
+@media only screen and (max-width:767px){
+    .inner-image-slider .image{padding-bottom:75%}
 }

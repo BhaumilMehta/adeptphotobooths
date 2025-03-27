@@ -1,0 +1,23 @@
+<svg width="323" height="52" viewBox="0 0 323 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 36C45.5228 36 50 31.5228 50 26C50 20.4772 45.5228 16 40 16C34.4772 16 30 20.4772 30 26C30 31.5228 34.4772 36 40 36ZM40.0003 34.9472C44.9418 34.9472 48.9477 30.9413 48.9477 25.9998C48.9477 21.0584 44.9418 17.0525 40.0003 17.0525C35.0588 17.0525 31.0529 21.0584 31.0529 25.9998C31.0529 30.9413 35.0588 34.9472 40.0003 34.9472Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M40 36C45.5228 36 50 31.5228 50 26C50 20.4772 45.5228 16 40 16C34.4772 16 30 20.4772 30 26C30 31.5228 34.4772 36 40 36ZM40.0003 34.9472C44.9418 34.9472 48.9477 30.9413 48.9477 25.9998C48.9477 21.0584 44.9418 17.0525 40.0003 17.0525C35.0588 17.0525 31.0529 21.0584 31.0529 25.9998C31.0529 30.9413 35.0588 34.9472 40.0003 34.9472Z" fill="black"/>
+<ellipse cx="40.0004" cy="26.0001" rx="6.84211" ry="6.84211" fill="white"/>
+<ellipse cx="40.0004" cy="26.0001" rx="6.84211" ry="6.84211" fill="black"/>
+<g clip-path="url(#clip0_4_166)">
+<path d="M64 -4L94 26L64 56" stroke="white" stroke-width="11"/>
+<path d="M64 -4L94 26L64 56" stroke="black" stroke-width="11"/>
+<path d="M114 -4L144 26L114 56" stroke="white" stroke-width="11"/>
+<path d="M114 -4L144 26L114 56" stroke="black" stroke-width="11"/>
+<path d="M164 -4L194 26L164 56" stroke="white" stroke-width="11"/>
+<path d="M164 -4L194 26L164 56" stroke="black" stroke-width="11"/>
+<path d="M214 -4L244 26L214 56" stroke="white" stroke-width="11"/>
+<path d="M214 -4L244 26L214 56" stroke="black" stroke-width="11"/>
+<path d="M264 -4L294 26L264 56" stroke="white" stroke-width="11"/>
+<path d="M264 -4L294 26L264 56" stroke="black" stroke-width="11"/>
+</g>
+<defs>
+<clipPath id="clip0_4_166">
+<rect width="246" height="52" fill="white" transform="translate(56)"/>
+</clipPath>
+</defs>
+</svg>
