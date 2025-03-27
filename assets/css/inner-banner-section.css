@@ -1,0 +1,14 @@
+.inner-banner-sec {
+    background-color: #000;
+    margin: 0;
+    padding: 70px 0;
+}
+
+.inner-banner-text h1:last-child {
+    margin-bottom: 0;
+}
+
+.inner-banner-text h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}

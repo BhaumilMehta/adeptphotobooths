@@ -49,7 +49,11 @@ function adeptphotobooths_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'adeptphotobooths' ),
+			'header-menu' => esc_html__( 'Primary', 'adeptphotobooths' ),
+			'experiences-menu' => esc_html__( 'experiences', 'adeptphotobooths' ),
+			'services-menu' => esc_html__( 'services', 'adeptphotobooths' ),
+			'info-menu' => esc_html__( 'info', 'adeptphotobooths' ),
+			'about-menu' => esc_html__( 'about', 'adeptphotobooths' ),
 		)
 	);
 
@@ -135,6 +139,11 @@ function adeptphotobooths_widgets_init() {
 add_action( 'widgets_init', 'adeptphotobooths_widgets_init' );
 
 /**
+ * DD Functions 
+ */
+require get_template_directory() . '/inc/dd-functions.php';
+
+/**
  * Script enqueue 
  */
 require get_template_directory() . '/inc/script-enqueue.php';
@@ -166,5 +175,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-/* svg support */ function cc_mime_types($mimes) { $mimes['svg'] = 'image/svg+xml'; return $mimes; } add_filter('upload_mimes', 'cc_mime_types');

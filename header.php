@@ -31,34 +31,62 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'adeptphotobooths' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$adeptphotobooths_description = get_bloginfo( 'description', 'display' );
-			if ( $adeptphotobooths_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $adeptphotobooths_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'adeptphotobooths' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+		 <div class="topbar">
+			 <div class="container">
+                <div class="topbar-row">
+					<div class="reviews-text">
+						 over <span class="counter">280<span>+ Google Reviews
+					</div>
+					<div class="location">
+						 <a href="#">wa</a>
+						 <a href="#">sa</a>
+						 <a href="#">nsw</a>
+						 <a href="#">vic</a>
+						 <a href="#">qld</a>
+						 <a href="#">tas</a>
+					</div>
+					<div class="user-info">
+						<a href="tel:1300 233 781">
+							<img src="<?php echo get_template_directory_uri();?>/assets/images/mail-white.svg" alt="">
+							1300 233 781
+						</a>
+						<a href="mailto:hello@adeptphotobooths.com.au">
+						    <img src="<?php echo get_template_directory_uri();?>/assets/images/phone-white.svg" alt="">
+							hello@adeptphotobooths.com.au
+						</a>
+					</div>
+				</div>
+			 </div>
+		 </div>
+		 <div class="sticky-header">
+			<div class="container">
+				<div class="main-header">
+					<div class="site-branding">
+						<?php the_custom_logo();?>
+					</div><!-- .site-branding -->
+					<div class="header-main">
+						<div class="close-btn toggle">
+					     	<img src="<?php echo get_template_directory_uri();?>/assets/images/close-btn.svg" alt="">
+						</div>
+						<div class="header-navigation">
+							   <?php
+							   wp_nav_menu(
+								   array(
+									   'theme_location' => 'header-menu',
+									   'menu_id'        => 'primary-menu',
+								   )
+							   );
+							   ?>
+						</div>
+						<div class="defualt-btn">
+							<a href="#" class="defualt_btn">Get in touch</a>
+						</div>
+					</div>
+					<div class="toggle_menu toggle">
+					    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu.svg" alt="">
+					</div>
+				</div>
+			</div>
+		 </div>
 	</header><!-- #masthead -->
+    <?php dd_woocommerce_breadcrumb(); ?>

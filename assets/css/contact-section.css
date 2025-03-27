@@ -1,0 +1,107 @@
+.contact_info {
+    background: url(../images/contact-info-shape.png),linear-gradient(270deg, #FF0062 17.86%, #FFBF00 103.98%), linear-gradient(0deg, #FF0061 0%, #FF0061 100%), linear-gradient(90deg, #F30 0%, #FF0037 100%), linear-gradient(259deg, #830B00 38.64%, #FF1500 111.42%);
+    padding: 80px 0;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+}
+.contact_info:before {
+    content: "";
+    display: block;
+    background: linear-gradient(87deg, #FF0062 17.86%, #FFBF00 103.98%), #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    height: 15px;
+    top: 0;
+    z-index: 1;
+    bottom: 0;
+}
+
+.contact_info:after {
+    content: "";
+    display: block;
+    background: linear-gradient(87deg, #FF0062 17.86%, #FFBF00 103.98%), #000;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    height: 15px;
+    bottom: 0;
+    z-index: 1;
+    bottom: 0;
+}
+.contact_info .column-row .column-left {
+    width: 50%;
+}
+
+.contact_info .column-row .column-right {
+    width: 41.75%;
+}
+.contact_info .column-row .column-right h5 {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact_info .column-row .column-right h5 {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.contact_info .column-row .column-right  .user-info a {
+    display: flex;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.contact_info .column-row .column-right .user-info a:not(:last-child) {
+    margin-bottom: 10px;
+}
+.contact-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
+}
+.contact_info .column-row .column-left {
+    width: 50%;
+    margin-bottom: -250px;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width:1399px){
+    .contact_info .column-row .column-right {
+        width: 44.75%;
+    }
+}
+@media only screen and (max-width:1199px){
+    h2, .h2{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:991px){
+    .contact_info .column-row {
+        flex-direction: column-reverse;
+    }
+    .contact_info .column-row .column-left {
+        width: 100%;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 2;
+        margin-top: 90px;
+    }
+    .contact_info .column-row .column-right {
+        width: 100%;
+    }
+    .contact_info {
+        background: url(../images/contact-info-shape-mobile.png),linear-gradient(180deg, #FF0062 17.86%, #FFBF00 103.98%), linear-gradient(0deg, #FF0061 0%, #FF0061 100%), linear-gradient(90deg, #F30 0%, #FF0037 100%), linear-gradient(259deg, #830B00 38.64%, #FF1500 111.42%);
+        background-position: top right;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+}
+@media only screen and (max-width:374px){
+    .contact_info .column-row .column-right .user-info a {
+        font-size: 13px;
+    }
+}
