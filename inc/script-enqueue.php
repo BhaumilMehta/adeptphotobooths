@@ -9,8 +9,11 @@ function adeptphotobooths_scripts() {
 	wp_enqueue_script( 'adeptphotobooths-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
     wp_enqueue_style('custom-css', get_template_directory_uri() . '/assets/css/custom.css', array(), time(), 'all');
 	wp_enqueue_style('slick-css', get_template_directory_uri() . '/assets/css/slick.css', array(), time(), 'all');
+	wp_enqueue_style('magnific-popup-min-css', get_template_directory_uri() . '/assets/css/magnific-popup.min.css', array(), time(), 'all');
+	wp_enqueue_script('magnific-popup-min-js', get_template_directory_uri() . '/assets/js/magnific-popup.min.js', array(), time(), true);
 	wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), time(), true);
 	wp_enqueue_script('slick-min', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'), time(), true);
+	
 	/*--------- DD Enqueue Styles ---------*/
 	global $post;
 	$flex_modules = get_post_meta( get_the_ID(), 'page-builder', true );

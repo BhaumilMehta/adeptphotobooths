@@ -68,7 +68,9 @@
     position: relative;
     z-index: 2;
 }
-
+.contact_info .column-row .column-right .content-block > * {
+    color: #ffffff;
+}
 @media only screen and (max-width:1399px){
     .contact_info .column-row .column-right {
         width: 44.75%;

@@ -1,0 +1,46 @@
+.stats-section {
+    margin: 0;
+}
+
+.stats-section .stats-slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats-section .stats-slider .stats-count {
+    font-size: 104px;
+    font-weight: 700;
+    margin-right: 16px;
+}
+
+.stats-section .stats-slider .stats-text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 213px;
+}
+
+.stats-section .stats-slider .stats-items {
+    display: flex;
+    align-items: center;
+}
+
+.stats-items-inr {
+    padding: 0 50px;
+    position: relative;
+}
+
+.stats-items-inr:before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    background: #000000;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

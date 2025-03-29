@@ -1,0 +1,161 @@
+.client-logo-seciton {
+    background: #000000;
+    margin: 0;
+    padding-top: 170px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.client-logo-seciton .text-with-btn h4 {
+    color: #ffffff;
+    margin: 0;
+}
+
+.client-logo-seciton .text-with-btn {
+    display: flex;
+    align-items: center;
+    transform: rotate(-1.653deg);
+    margin-bottom: 30px;
+}
+
+.client-logo-seciton .text-with-btn .defualt_btn {
+    margin-left: 30px;
+    flex-shrink: 0;
+}
+
+.client-logo-row {
+    display: flex;
+    align-items: center;
+    transform: rotate(-1.923deg);
+}
+
+
+.client-logo .text-block h2 {
+    color: #FFF;
+    font-size: 100px;
+    transition: all 0.6s;
+}
+
+.client-logo-row .client-logo {
+    padding:  0 30px;
+}
+
+.client-logo .text-block 
+ .hover-box {
+    border: 1px solid #848484;
+    background: #000;
+    height: 190px;
+    width: 190px;
+    padding: 8px;
+    transform: rotate(-2.078deg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-2.078deg);
+    transition: all 0.6s;
+    opacity: 0;
+}
+.client-logo .text-block .hover-box .img-wraper {
+    width: 100%;
+    height: 143px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+.client-logo .text-block .hover-box p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+}
+.client-logo-row .client-logo .text-block {
+    position: relative;
+}
+.client-logo .text-block .hover-box .img-wraper img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+.client-logo-row .client-logo .text-block:hover .hover-box {
+    opacity: 1;
+}
+.client-logo-row .slick-list {
+    overflow: visible;
+}
+
+.client-logo-slider > div:nth-child(even) .text-block h2 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #FFF;
+    color: transparent;
+}
+.client-logo-row .client-logo .text-block:hover h2 {
+    background: var(--Gradient, linear-gradient(90deg, #FFBF00 0%, #FF0062 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: unset;
+}
+.client-logo-btn {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+}
+@media only screen and (max-width:1199px){
+    .client-logo .text-block h2 {
+        color: #FFF;
+        font-size: 80px;
+        transition: all 0.6s;
+    }
+    .client-logo .text-block .hover-box {
+        height: 160px;
+        width: 160px;
+    }
+    .client-logo .text-block .hover-box .img-wraper {
+        width: 100%;
+        height: 120px;
+    }
+}
+@media only screen and (max-width:991px){
+    .client-logo .text-block h2 {
+        font-size: 60px;
+    }
+    .client-logo-seciton .text-with-btn .defualt_btn{
+        display: none;
+    }
+    .client-logo-btn {
+        display: block;
+    }
+    .client-logo-row .client-logo {
+        padding: 0 15px;
+    }
+    .client-logo-seciton .text-with-btn {
+        justify-content: center;
+    }
+    .client-logo-seciton {
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+    .client-logo .text-block .hover-box .img-wraper {
+        width: 100%;
+        height: 80px;
+    }
+}
+@media only screen and (max-width:767px){
+    .client-logo .text-block .hover-box .img-wraper {
+        width: 100%;
+        height: 80px;
+    }
+    .client-logo .text-block .hover-box {
+        height: 120px;
+        width: 120px;
+    }
+}
+@media only screen and (max-width:374px){
+    .client-logo .text-block h2 {
+        font-size: 45px;
+    }
+}

@@ -17,8 +17,7 @@ html {
 body {
     overflow-x: hidden;
     text-decoration: none;
-    color: #FFF;
-    font-family: "Alexandria", sans-serif;
+    color: #000000;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -30,33 +29,31 @@ body {
 
 h1,
 .h1 {
-    color: #FFF;
+    color: #000000;
     font-family: "Alexandria", sans-serif;
     font-size: 80px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1;
-    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 
 h2,
 .h2 {
-    color: #FFF;
-    leading-trim: both;
-    text-edge: cap;
+    color: #000000;
     font-family: "Alexandria", sans-serif;
     font-size: 60px;
     font-style: normal;
     font-weight: 600;
-    line-height: 1;
-    margin-bottom: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 
 h3,
 .h3 {
-    color: #FFF;
+    color: #000000;
     font-family: "Alexandria", sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -88,6 +85,7 @@ h5,
     font-weight: 600;
     line-height: normal;
     margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h6,
@@ -130,12 +128,13 @@ strong {
 
 
 p {
-    color: #FFF;
+    color: #000000;
     font-family: "Alexandria", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-bottom: 20px;
 }
 
 section {
@@ -213,11 +212,15 @@ a:active {
     background: linear-gradient(90deg, #FFBF00 0%, #FF0062 100%), #000;
 }
 
+.bg-gradient {
+    background: linear-gradient(180deg, #FF0062 3.69%, #F60 96.58%);
+}
+
 .defualt_btn,
 input[type="submit"],
 [type="submit"],
 .ff-btn-submit {
-    padding: 10px 20px;
+    padding: 8px 20px;
     color: #000;
     font-size: 18px;
     font-style: normal;
@@ -238,10 +241,17 @@ input[type="submit"],
 [type="submit"]:hover,
 input[type="submit"]:hover,
 .ff-btn-submit:hover {
-    background-color: transparent;
-    border: 2px solid #000;
+    background-color:  transparent;
+    border: 2px solid #000000;
+    color: #000000;
 }
-
+.defualt_btn.btn_white {
+    background-color: #ffffff;
+}
+.defualt_btn.btn_white:hover {
+    background-color: #FFBF00;
+    border: 2px solid #FFBF00;
+}
 .defualt_btn.border-cta {
     background-color: transparent;
     border: 2px solid transparent;
@@ -283,13 +293,17 @@ input[type="submit"]:focus {
     outline: 0;
 }
 
+svg path {
+    transition: all 0.6s;
+}
+
 .slick-arrow:hover {
     background-color: transparent;
-    border-color: #fff;
+    border-color: #FFBF00;
 }
 
 .slick-arrow:hover svg path {
-    stroke: #fff;
+    stroke: #FFBF00;
 }
 
 .slick-prev {
@@ -437,7 +451,6 @@ body .ff-default .ff-el-input--label label {
     font-family: "Alexandria", sans-serif;
 }
 
-
 /* Breadcrumbs CSS Start*/
 .home .breadcrumb_sec {
     display: none
@@ -495,9 +508,48 @@ body .ff-default .ff-el-input--label label {
 
 /*************************************************
                  header Css
- *************************************************/
-
+*************************************************/
+.home header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: transparent;
+}
+.site{
+    position: relative;
+}
+@keyframes slideDown {
+from {
+    transform: translateY(-100%);
+}
+to {
+    transform: translateY(0);
+}
+}
+.site-header.is-sticky .topbar {
+    display: none;
+}
+.site-header.is-sticky  .site-branding {
+    max-width: 200px;
+}
+.admin-bar .site-header.is-sticky {
+    top: 32px;
+}
 header {
+    background-color: #000000;
+    position: relative;
+}
+.site-header.is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    animation: slideDown 0.45s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    padding: 5px 0;
     background-color: #000000;
 }
 
@@ -994,7 +1046,7 @@ header .topbar {
         transform: translateX(100%);
         transition: all 0.6s;
         overflow: auto;
-        z-index: 1;
+        z-index: 2;
     }
 
     body.menu-open .header-main {

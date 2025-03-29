@@ -1,4 +1,7 @@
 .inner-banner-sec{background-color:#000;margin:0;padding:70px 0}
+.inner-banner-sec.image-slider {padding-bottom: 0;margin-bottom: -50px;}
+.inner-banner-text h1 {color: #fff;}
+.text-with-slider .wrapper .left-col  p {color: #fff;}
 .inner-banner-text h2{color:#fff;margin-bottom:20px}
 .inner-banner-text p{margin-bottom:20px}
 .text-with-slider .wrapper{display:flex;flex-wrap:wrap;justify-content:space-between}

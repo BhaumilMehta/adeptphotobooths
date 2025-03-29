@@ -1,0 +1,1 @@
+<h2>photo-booths-event-section</h2>

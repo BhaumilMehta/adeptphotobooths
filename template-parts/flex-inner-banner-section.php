@@ -1,10 +1,16 @@
-<section class="inner-banner-sec">
+<?php
+   $banner_title = get_sub_field('banner_title');
+   $banner_sub_title = get_sub_field('banner_sub_title');
+   $banner_text = get_sub_field('banner_text');
+   ?>
+<section class="inner-banner-sec image-slider">
+   <!--If the slider appears, add the class "image-slider", otherwise the class will not appear. -->
    <div class="container">
-    <div class="inner-banner-text">
-        <h1>Virtual Photo Booth</h1>
-        <h2 class="h4">Eget eget ut porttitor justo</h2>
-        <p>Quis eu urna mattis sit egestas sit congue. Augue amet sapien purus nam vulputate. Vulputate leo nulla odio molestie ullamcorper dignissim commodo consectetur consectetur. Urna molestie a morbi viverra est ultrices nisl sed nulla. Habitant odio mauris dolor velit. Aliquet ultrices consectetur faucibus ac. Molestie sed nunc quam nisi proin in varius. Tellus scelerisque amet in sed praesent proin fames ut donec. Ultricies est orci cras dictum iaculis pellentesque dolor enim natoque. Magna dignissim lacus nullam leo tellus cras.</p>
-    </div>
+      <div class="inner-banner-text">
+         <?php if(!empty($banner_title)){ echo '<h1>'.$banner_title.'</h1>'; }?>
+         <?php if(!empty($banner_sub_title)){ echo '<h2 class="h4">'.$banner_sub_title.'</h4>'; }?>
+         <?php echo wpautop( $banner_text );?> 
+      </div>
       <div class="text-with-slider">
          <div class="wrapper">
             <div class="left-col">
