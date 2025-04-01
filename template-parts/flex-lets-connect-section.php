@@ -5,7 +5,7 @@
          <div class="column-row">
              <div class="column-left">
                  <div class="content-box">
-                     <h2>Let’s Connect</h2>
+                     <h2 class="h1">Let’s Connect</h2>
                      <p>We’ve delivered every type of event you can think of!</p>
                      <p>Follow our social media pages to keep up-to-date with our most recent activations.</p>
                      <div class="social-link">
@@ -22,35 +22,44 @@
                 <div class="lets-connect-wraper">
                     <div class="lets-connect-row">
                         <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-1.png" alt="">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-1.png" alt="">
                         </div>
                         <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
                         </div>
                         <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="lets-connect-row">
-                        <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-1.png" alt="">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-1.png" alt="">
                         </div>
                         <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
-                        </div>
-                        <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
                         </div>
                     </div>
                     <div class="lets-connect-row">
                         <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-1.png" alt="">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-5.png" alt="">
                         </div>
                         <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-2.png" alt="">
                         </div>
                         <div class="let-connect-item">
-                            <img src="https://dddemo.net/wordpress/2025/adeptphotobooths/wp-content/uploads/2025/03/lets-connect-4.png" alt="">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-5.png" alt="">
+                        </div>
+                        <div class="let-connect-item">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="lets-connect-row">
+                        <div class="let-connect-item">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-3.png" alt="">
+                        </div>
+                        <div class="let-connect-item">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-6.png" alt="">
+                        </div>
+                        <div class="let-connect-item">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-3.png" alt="">
+                        </div>
+                        <div class="let-connect-item">
+                            <img src="<?php echo get_home_url();?>/wp-content/uploads/2025/03/lets-connect-6.png" alt="">
                         </div>
                     </div>
                 </div>

@@ -1,39 +1,13 @@
+.two-col-text-sec{padding:60px 0;margin:0}
+.two-col-text-sec .text-block>*{color:#fff}
+.two-col-text-sec .col-block .text-block .defualt_btn{color:#000}
+.two-col-text-sec .col-block .text-block .defualt_btn:hover{color: #FFBF00;}
+.two-col-text-sec .text-block h3,.two-col-text-sec .text-block h4,.two-col-text-sec .text-block h5{font-size:20px}
+.two-col-text-sec .col-block{width:50%;padding:0 20px}
+.two-col-text-sec .column-row{margin:0 -20px}
 
-.two-col-text-sec {
-    padding: 100px 0 60px;
-    margin: 0;
-}
-
-.two-col-text-sec .text-block > *:not(.default_btn){
-    color: #fff;
-}
-
-.two-col-text-sec .col-block .text-block .defualt_btn {
-    color: #000;
-}
-.two-col-text-sec .text-block h3,
-.two-col-text-sec .text-block h4,
-.two-col-text-sec .text-block h5 {
-    font-size: 20px;
-}
-
-.two-col-text-sec .col-block {
-    width: 50%;
-    padding: 0 20px;
-}
-
-.two-col-text-sec .column-row {
-    margin: 0 -20px;
-}
-
-
-
-@media only screen and (max-width: 991px) {
-    .two-col-text-sec .col-block:not(:last-child) {
-        margin-bottom: 30px;
-    }
-
-    .two-col-text-sec .col-block {
-        width: 100%;
-    }
+@media only screen and (max-width:991px){
+    .two-col-text-sec{padding:40px 0}
+    .two-col-text-sec .col-block:not(:last-child){margin-bottom:30px}
+    .two-col-text-sec .col-block{width:100%}
 }

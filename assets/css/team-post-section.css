@@ -1,0 +1,68 @@
+.team-post-section {
+    margin: 0;
+    background: #000000;
+    overflow: hidden;
+}
+
+.team-post-wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 -5px;
+}
+
+.team-post-box {
+    width: 25%;
+    padding: 0 5px;
+}
+
+.team-post-box .team-items img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-post-box .team-items {
+    position: relative;
+    padding-bottom: 116%;
+}
+
+.team-post-box .team-post {
+    position: relative;
+    display: block;
+}
+
+.team-post-box .team-post .author-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    background: #000;
+    padding: 10px;
+    text-align: center;
+}
+
+.team-post-box .team-post .author-info >* {
+    color: #ffffff;
+}
+
+.team-post-box .team-post .author-info h4 {
+    margin-bottom: 0;
+}
+.team-post-section  .progress_bar {
+    margin-top: 10px;
+    padding: 15px 0;
+    border-top: 1px solid  #363636;
+}
+
+.team-post-section .progress{
+    background-color: #D9D9D9;
+}
+
+@media only screen and (max-width:575px){
+    .team-post-section .slick-list.draggable {
+        padding-right: 40px;
+    }
+}

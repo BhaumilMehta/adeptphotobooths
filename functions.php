@@ -139,6 +139,16 @@ function adeptphotobooths_widgets_init() {
 add_action( 'widgets_init', 'adeptphotobooths_widgets_init' );
 
 /**
+ * Custom Post type file
+ */
+require get_template_directory() . '/inc/posts-type.php';
+
+/**
+ * shortcodes
+ */
+require get_template_directory() . '/inc/shortcodes.php';
+
+/**
  * DD Functions 
  */
 require get_template_directory() . '/inc/dd-functions.php';

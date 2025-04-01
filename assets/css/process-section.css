@@ -1,0 +1,151 @@
+.process-section {
+    margin: 0;
+    background-image: url(../images/process-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0 30px;
+    background-color: #000000;
+}
+.process-section .column-row .column-left {
+    width: 30%;
+    text-align: center;
+    transform: rotate(-5.033deg);
+}
+.process-section .column-row .column-right {
+    width: 70%;
+}
+.process-section .column-row .column-left .img-wraper {
+    position: relative;
+    padding-bottom: 114%;
+    margin-top: 100px;
+}
+.process-section .column-row .column-left .img-wraper img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+}
+.process-section .column-row .column-left .defualt_btn {
+    top: -20px;
+    position: relative;  
+}
+.our-engagement-process h1 {
+    text-transform: uppercase;
+}
+.our-engagement-process .title h2 span {
+    -webkit-text-stroke-width: 3.73px;
+    -webkit-text-stroke-color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-style: normal;
+    background: transparent;
+    background-clip: unset;
+    -webkit-background-clip: unset;
+}
+.process-section .column-row .column-right .our-engagement-process {
+    width: calc(100% + 100px);
+    margin-left: -100px;
+    position: relative;
+    padding: 50px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(5px);
+}
+
+.process-section .column-row .column-right .our-engagement-process h2 {
+    text-transform: uppercase;
+    line-height: 1;
+}
+.our-engagement-process .process {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+.our-engagement-process .process .process-step {
+    padding: 0 30px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    color: #FFF;
+    text-shadow: 0px 4px 13px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+}
+.our-engagement-process .process .process-step span {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+@media only screen and (max-width:1199px){
+    .process-section .column-row .column-left .img-wraper {
+        margin-top: 60px;
+    }
+    .process-section .column-row .column-right .our-engagement-process {
+        width: calc(100% + 70px);
+        margin-left: -70px;
+        padding: 30px;
+    }
+    .our-engagement-process .process {
+        margin-left: 70px;
+    }
+    .our-engagement-process .process .process-step {
+        padding: 0 15px;
+    }
+}
+@media only screen and (min-width:992px){
+    .our-engagement-process .title .defualt_btn {
+        display: none;
+    }
+}
+@media only screen and (max-width:991px){
+    .process-section .column-row .column-right {
+        width: 100%;
+    }
+    .process-section .column-row .column-left {
+        width: 100%;
+    }
+    .process-section .column-row .column-right .our-engagement-process {
+        width: 100%;
+        margin-left: 0;
+        padding: 60px 0 20px;
+    }
+    .our-engagement-process .process {
+        margin-left: 0;
+        display: block;
+    }
+    .our-engagement-process .process .process-step {
+        padding: 0;
+        flex-direction: unset;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .our-engagement-process .process .process-step span {
+        margin-right: 10px;
+    }
+    .process-section .column-row .column-left .img-wraper {
+        margin-top: 0;
+    }
+    .process-section .column-row {
+        flex-direction: column-reverse;
+    }
+    .process-section {
+        padding: 10px 0 0px;
+    }
+    .process-section .column-row .column-left .defualt_btn {
+        display: none;
+    }
+    .process-section {
+        background-image: url(../images/process-bg-mobile.png);
+        background-size: 100% 80%;
+    }
+    .our-engagement-process .title {
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:767px){
+    
+}

@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url('../font/BebasKai.eot');
+    src: url('../font/BebasKai.eot?#iefix') format('embedded-opentype'),
+        url('../font/BebasKai.woff2') format('woff2'),
+        url('../font/BebasKai.woff') format('woff'),
+        url('../font/BebasKai.ttf') format('truetype'),
+        url('../font/BebasKai.svg#BebasKai') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Kai';
+    src: url('../font/BebasKai_1.eot');
+    src: url('../font/BebasKai_1.eot?#iefix') format('embedded-opentype'),
+        url('../font/BebasKai_1.woff2') format('woff2'),
+        url('../font/BebasKai_1.woff') format('woff'),
+        url('../font/BebasKai_1.ttf') format('truetype'),
+        url('../font/BebasKai_1.svg#BebasKai') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 .post,
 .page {
     margin-bottom: 0;
@@ -29,7 +56,7 @@ body {
 
 h1,
 .h1 {
-    color: #000000;
+    color: #ffffff;
     font-family: "Alexandria", sans-serif;
     font-size: 80px;
     font-style: normal;
@@ -228,38 +255,38 @@ input[type="submit"],
     line-height: normal;
     text-transform: uppercase;
     transition: all 0.6s ease-in-out;
-    border: 2px solid transparent;
+    border: 2px solid #FFBF00;
     background: #FFBF00;
     display: inline-block;
+    
 }
 
 .ff-btn-submit {
     width: 100%;
 }
-
-.defualt_btn:hover,
-[type="submit"]:hover,
-input[type="submit"]:hover,
-.ff-btn-submit:hover {
-    background-color:  transparent;
-    border: 2px solid #000000;
-    color: #000000;
+.defualt_btn:hover, [type="submit"]:hover, input[type="submit"]:hover, .ff-btn-submit:hover {
+    background-color: transparent;
+    border: 2px solid #FFBF00;
+    color: #FFBF00;
 }
 .defualt_btn.btn_white {
     background-color: #ffffff;
+    border: 2px solid #ffffff;
 }
 .defualt_btn.btn_white:hover {
-    background-color: #FFBF00;
+    background-color: #000000;
     border: 2px solid #FFBF00;
+    border: 2px solid #000000;
 }
 .defualt_btn.border-cta {
     background-color: transparent;
-    border: 2px solid transparent;
+    border: 2px solid #000000;
 }
-
 .defualt_btn.border-cta:hover {
-    background: #FFBF00;
+    background-color: transparent;
     color: #000;
+    border: 2px solid #FFBF00;
+    color: #FFBF00;
 }
 
 button:active,
@@ -277,7 +304,7 @@ input[type="submit"]:focus {
     height: 48px;
     width: 48px;
     font-size: 0;
-    background: #FFBF00;
+    background-color: #FFBF00;
     border: 2px solid #FFBF00;
     outline: none;
     border-radius: 8px;
@@ -308,10 +335,11 @@ svg path {
 
 .slick-prev {
     left: 0;
+   
 }
-
 .slick-next {
     right: 0;
+
 }
 
 ul.slick-dots {
@@ -394,6 +422,7 @@ body .ff-default .ff-el-form-control {
     background-repeat: no-repeat;
     background-position: center left;
     background-size: 20px;
+    outline: none;
 }
 
 body .fluentform .ff-el-group {
@@ -506,9 +535,149 @@ body .ff-default .ff-el-input--label label {
 /* Breadcrumbs CSS End*/
 
 
+.title_width_btn .column-row {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.title_width_btn h2 {
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.title_width_btn {
+    margin-bottom: 30px;
+}
+
+.title_width_btn p {
+    color: #494949;
+}
+
+
+
+
+
+.list-with-search-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.list-with-search-btn .seacrh-btn {
+    max-width: 389px;
+    width: 100%;
+    margin-left: 50px;
+}
+.list-with-search-btn .list {
+    font-weight: 400;
+}
+
+.list-with-search-btn .list span {
+    margin-right: 5px;
+}
+
+.list-with-search-btn .seacrh-btn input[type="text"] {
+    width: 100%;
+    background-image: url(../images/search.svg);
+}
+
+
+
+
+/*Progreass bar css Star*/
+.progress_bar {
+    margin-top: 44px;
+}
+
+.progress {
+    position: relative;
+    display: block;
+    width: calc(100% - 16px);
+    height: 6px;
+    background-color: rgb(0 0 0 / 20%);
+    border-radius: 3px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#FFD452), to(#FFD452));
+    background-image: linear-gradient(to right, #FFD452, #FFD452);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.progress_arrow_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.progress_arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.progress_arrow .slick-arrow {
+    position: initial;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.progress_next_arrow {
+    margin-left: 10px;
+}
+
+body .ff-message-success {
+    border: 00;
+    box-shadow: unset;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    background: var(--Pink-Orange, linear-gradient(147deg, #FF0062 19.73%, #F60 78.34%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
 /*************************************************
                  header Css
 *************************************************/
+.switch_section + .site-footer .footer-logo {
+    text-align: left;
+}
+header.pink-header {
+    background-color: #FF0062;
+}
+
+header.pink-header + .breadcrumb-sec {
+    background-color: #FF0062;
+}
+
+
 .home header {
     position: absolute;
     top: 0;
@@ -565,7 +734,9 @@ header .topbar {
     align-items: center;
     justify-content: space-between;
 }
-
+.reviews-text {
+    color: #ffffff;
+}
 .topbar-row>* {
     font-weight: 700;
     text-transform: uppercase;
@@ -757,11 +928,17 @@ header .topbar {
     font-weight: 500;
     margin-right: 20px;
 }
+.social-link a img:hover {
+    filter: unset;
+}
 
 .social-link a:not(:first-child) {
     margin-left: 10px;
 }
 
+.social-link a img {
+    filter: invert(0) brightness(0);
+}
 .social-link a img {
     vertical-align: middle;
 }
@@ -888,6 +1065,9 @@ header .topbar {
     .header-navigation .sub-menu li a:hover {
         background: #FFBF00;
     }
+    .mobile_btn {
+        display: none;
+    }
 }
 
 @media only screen and (min-width:1200px) {
@@ -977,12 +1157,34 @@ header .topbar {
 
 @media only screen and (max-width:1199px) {
 
-    h1, .h1,
-    h2, .h2{
+    h1, .h1{
         font-size: 50px;
         margin-bottom: 20px;
     }
+    h2, .h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
 
+    section {
+        margin: 60px 0;
+    }
+
+    .list-with-search-btn .seacrh-btn {
+        max-width: 320px;
+        width: 100%;
+        margin-left: 30px;
+    }
+   /*progress Bar*/
+
+   .progress_bar {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .progress_arrow {
+        margin-left: 20px;
+    }
     /*************************************************
                  Header Css
     *************************************************/
@@ -1009,12 +1211,31 @@ header .topbar {
 
 @media only screen and (max-width:991px) {
 
+    h2, .h2{
+        font-size: 30px;
+    }
+    h3, .h3{
+        font-size: 30px;
+    }
+    section {
+        margin: 40px 0;
+    }
+    .desktop_btn {
+        display: none;
+    }
+    .list-with-search-btn {
+        display: block;
+    }
+    .list-with-search-btn .seacrh-btn {
+        max-width: 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
     /*************************************************
                  Header Css
     *************************************************/
-    section{
-        margin: 50px 0;
-    }
+
     .toggle {
         display: flex;
     }
@@ -1046,7 +1267,7 @@ header .topbar {
         transform: translateX(100%);
         transition: all 0.6s;
         overflow: auto;
-        z-index: 2;
+        z-index: 3;
     }
 
     body.menu-open .header-main {
@@ -1169,6 +1390,14 @@ header .topbar {
 
 @media only screen and (max-width:767px) {
 
+
+    .progress_bar {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .progress_arrow {
+        margin-left: 30px;
+    }
     /*************************************************
                  Footer  Css
     *************************************************/
@@ -1216,7 +1445,9 @@ header .topbar {
     .footer-info .user-info a {
         font-size: 13px;
     }
-
+    h1, .h1 {
+        font-size: 40px;
+    }
     .social-link h5 {
         font-size: 16px;
     }

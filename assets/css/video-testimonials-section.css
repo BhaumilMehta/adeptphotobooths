@@ -1,0 +1,110 @@
+.video-testimonials-slider {
+    display: flex;
+}
+
+.video-testimonials-iner {
+    width: 33.33%;
+}
+.video-testimonials-slider .slick-track {
+    display: flex;
+}
+.video-testimonials-slider .slick-track .video-testimonials-iner {
+    height: auto;
+}
+.video-testimonials-iner .video-testimonials-box {
+    background: linear-gradient(138deg, #000 23.7%, #1C1C1C 37.83%, #4B4B4B 40.08%, #1C1C1C 43.85%, #000 61.36%);
+    display: block;
+    padding: 14px;
+    transition: all 0.6s;
+    height: 100%;
+}
+.video-testimonials-iner .video-testimonials-box:hover {
+    background: linear-gradient(234deg, #FFBF00 49.52%, #FF0062 83.4%);
+}
+.video-testimonials-items {
+    position: relative;
+    padding-bottom: 136%;
+    z-index: 1
+}
+
+.video-testimonials-items img:not(.play_btn img) {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.video-testimonials-items .play_btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+}
+.video-testimonials-items .play_btn p{
+    font-weight: 700;
+    color: #FFF;
+    display: none;
+}
+.video-testimonials-items .play_btn img {
+    height: 71px;
+    width: 71px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.video-testimonials-content>* {
+    color: #ffffff;
+}
+
+.video-testimonials-content {
+    padding: 20px;
+}
+
+.video-testimonials-content h4 {
+    margin-bottom: 10px;
+}
+.video-testimonials-iner .video-testimonials-box:hover .play_btn p {
+    display: block;
+}
+.video-testimonials-items:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.video-testimonials-items:after{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.video-testimonials-iner .video-testimonials-box:hover .video-testimonials-items:before,
+.video-testimonials-iner .video-testimonials-box:hover .video-testimonials-items:after {
+    height: 63px;
+    width: 63px;
+    opacity: 1;
+}
+
+@media only screen and (max-width:767px){
+    .video-testimonials-slider .slick-track {
+        margin-left: -40px;
+    }
+}

@@ -1,0 +1,204 @@
+.virtual-booth-hire-sec {
+    background: linear-gradient(4.95deg, #FF0062 18.57%, #FF6600 89.67%);
+    padding: 80px 0;
+    position: relative;
+    margin: 0;
+    z-index: 1;
+}
+
+.virtual-booth-hire-sec .column-row {
+    margin: 0 -20px;
+}
+
+.virtual-booth-hire-sec .column-row>div {
+    padding: 0 20px;
+    width: 50%;
+}
+
+.virtual-booth-hire-sec .text-block *,
+.single-title h2 {
+    color: #fff;
+}
+
+.virtual-booth-hire-sec .text-block ul li {
+    background-image: url('../images/list-icon.svg');
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-size: 14px;
+}
+
+.virtual-booth-hire-sec .text-block ul li strong {
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.virtual-booth-hire-sec .text-block ul {
+    margin: 30px 20px 0 20px;
+    list-style-type: none;
+}
+
+.virtual-booth-hire-sec .text-block ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.get-in-touch-box {
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    padding: 20px;
+}
+
+.get-in-touch-box h5 {
+    font-weight: 700;
+}
+
+.get-in-touch-box .defualt_btn {
+    color: #000;
+}
+
+.get-in-touch-box .defualt_btn.defualt_btn:hover {
+    color: #FFBF00;
+}
+
+.virtual-booth-hire-sec .event-cta {
+    padding: 20px 50px;
+    border-radius: 10px;
+    background: #ffffff;
+    margin-top: 40px;
+}
+
+.virtual-booth-hire-sec .event-cta .cta-wrapper {
+    margin: 0 -10px -10px -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.virtual-booth-hire-sec .event-cta .cta-wrapper .cat-text {
+    width: auto;
+}
+
+.virtual-booth-hire-sec .event-cta .cta-wrapper .cta-btn {
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+.virtual-booth-hire-sec .event-cta .cta-wrapper .cta-btn .defualt_btn {
+    margin-left: 20px;
+    display: inline-flex;
+}
+
+.virtual-booth-hire-sec .event-cta .cta-wrapper .cta-btn .defualt_btn:first-child {
+    margin-left: 0;
+}
+
+.virtual-booth-hire-sec .event-cta .cta-wrapper>div {
+    padding: 0 10px;
+}
+
+.virtual-booth-hire-sec .cat-text h5,
+.virtual-booth-hire-sec .cat-text p {
+    color: #000;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.virtual-booth-hire-sec .cat-text h5 {
+    margin-bottom: 0;
+}
+
+.virtual-booth-hire-sec:before {
+    content: '';
+    background-image: url('../images/logo-shape.svg');
+    width: 254px;
+    height: 279px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 1199px) {
+    .virtual-booth-hire-sec {
+        padding: 60px 0;
+    }
+
+    .virtual-booth-hire-sec .event-cta {
+        padding: 20px;
+    }
+    .virtual-booth-hire-sec .event-cta .cta-wrapper {
+        flex-direction: column;
+    }
+    .virtual-booth-hire-sec .cat-text h5 {
+        margin-bottom: 20px;
+    }
+
+    .virtual-booth-hire-sec .column-row>div {
+        padding: 0 15px;
+    }
+
+    .virtual-booth-hire-sec .column-row {
+        margin: 0 -15px;
+    }
+
+    .virtual-booth-hire-sec .text-block ul li strong {
+        font-size: 16px;
+    }
+
+    .virtual-booth-hire-sec .text-block ul {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+    .virtual-booth-hire-sec:before {
+        width: 200px;
+        height: 190px;
+    }
+    .virtual-booth-hire-sec .event-cta .cta-wrapper .cta-btn {
+        text-align: center;
+    }
+    .virtual-booth-hire-sec .event-cta .cta-wrapper .cta-btn .defualt_btn {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .virtual-booth-hire-sec .event-cta {
+        text-align: center;
+    }
+
+    .virtual-booth-hire-sec .event-cta .cta-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .virtual-booth-hire-sec .event-cta .cta-wrapper .cat-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .virtual-booth-hire-sec .event-cta .cta-wrapper>div {
+        padding: 0;
+    }
+
+    .virtual-booth-hire-sec .column-row>div {
+        width: 100%;
+    }
+
+    .virtual-booth-hire-sec .column-row .right-col {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .virtual-booth-hire-sec {
+        padding: 40px 0;
+    }
+    .virtual-booth-hire-sec .event-cta .cta-wrapper .cta-btn .defualt_btn {
+        margin-left: 0;
+    }
+}

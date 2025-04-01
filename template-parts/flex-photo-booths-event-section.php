@@ -4,7 +4,7 @@
             <div class="booth_event_heading_wrapper">
                 <div class="booth_event_heading_row">
                     <div class="booth_event_heading_column left_column">
-                        <div class="booth_event_heading active">
+                        <div class="booth_event_heading">
                             <div class="booth_number">
                                 <span>168152015</span>
                             </div>
@@ -119,8 +119,26 @@
 
                 </div>
             </div>
+            <div class="progress_bar booth">
+                <div class="container">
+                    <div class="progress_arrow_wrapper">
+                        <div class="progress"></div>
+                        <div class="progress_arrow">
+                            <div class="prev slick-arrow progress_prev_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <path d="M10 17.5L2 9.5M2 9.5L10 1.5M2 9.5H10H18" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="next slick-arrow progress_next_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <path d="M10 17.5L18 9.5M18 9.5L10 1.5M18 9.5H10H2" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+           </div>
         </div>
-
         <div class="event_slider">
             <div class="booth_wrapper">
                 <div class="booth_row">
@@ -197,27 +215,27 @@
 
                 </div>
             </div>
-        </div>
-
-        <div class="progress_bar">
-            <div class="container">
-                <div class="progress_arrow_wrapper">
-                    <div class="progress"></div>
-                    <div class="progress_arrow">
-                        <div class="prev slick-arrow progress_prev_arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                                <path d="M10 17.5L2 9.5M2 9.5L10 1.5M2 9.5H10H18" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
-                        <div class="next slick-arrow progress_next_arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                                <path d="M10 17.5L18 9.5M18 9.5L10 1.5M18 9.5H10H2" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
-                    </div> 
+            <div class="progress_bar event">
+                <div class="container">
+                    <div class="progress_arrow_wrapper">
+                        <div class="progress"></div>
+                        <div class="progress_arrow event-arrow">
+                            <div class="prev slick-arrow progress_prev_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <path d="M10 17.5L2 9.5M2 9.5L10 1.5M2 9.5H10H18" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                            <div class="next slick-arrow progress_next_arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                                    <path d="M10 17.5L18 9.5M18 9.5L10 1.5M18 9.5H10H2" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </div>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
+
 
     </div>
 </section>

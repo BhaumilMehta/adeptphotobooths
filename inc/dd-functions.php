@@ -5,6 +5,12 @@ if(isset($_GET['dev'])){
     exit;
 }
 
+function year_shortcode() {
+    $year = date('Y');
+    return $year;
+}
+add_shortcode('year', 'year_shortcode');
+
 function my_login_logo() { 
 	$logo = get_theme_mod( 'custom_logo' );
     if($logo){
@@ -131,18 +137,6 @@ function dd_woocommerce_breadcrumb(){
                         </div>
                     </div>
                 <?php   
-                 }elseif(is_shop()){ ?>
-                 <div class="breadcrumb-sec">
-                    <div class="container">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb ms-0 mb-3">
-                            <li class="breadcrumb-item"><a href="<?php echo home_url(); ?>"><?php _e('Home'); ?></a></li>
-                            <li class="breadcrumb-item active"><?php echo 'Shop'; ?></li>
-                            </ol>
-                        </nav>
-                    </div>
-                 </div>
-                 <?php    
                  }else{ ?>
                 <div class="breadcrumb-sec">
                     <div class="container">
@@ -158,4 +152,5 @@ function dd_woocommerce_breadcrumb(){
     }
     echo ob_get_clean();
 }
+
 

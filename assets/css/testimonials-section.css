@@ -1,0 +1,126 @@
+
+.testimonials-section {
+    background: #F4F4F4;
+    padding: 60px 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.testimonials-wrapper .slick-list {
+    border-radius: 20px;
+}
+
+.testimonials-wrapper .slick-list  .slick-track {
+    display: flex;
+}
+
+.testimonials-wrapper .testimonials-col {
+    width: 100%;
+    padding: 0 15px;
+    height: inherit;
+}
+
+.testimonials-box {
+    border-radius: 20px;
+    background: #FFF;
+    padding: 30px;
+    height: 100%;
+    position: relative;
+}
+
+.testimonials-title h3 {
+    color: #FF3700;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.testimonials-text p {
+    color: #2D2D2D;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.testimonials-wrapper.slick-initialized .testimonials-text {
+    height: 220px;
+    overflow-y: auto;
+    padding-right: 23px;
+}
+
+.testimonials-wrapper.slick-initialized .testimonials-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.testimonials-wrapper.slick-initialized .testimonials-text::-webkit-scrollbar-thumb {
+    border-radius: 11.406px;
+    background: linear-gradient(90deg, #FFBF00 0%, #FF0062 186.14%), #000;
+}
+
+.testimonials-wrapper.slick-initialized .testimonials-text::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 11.406px;
+}
+
+.testimonials-box:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('../images/google-icon.svg');
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.testimonials-wrapper .testimonials-col {
+    padding: 0 10px;
+    height: inherit;
+}
+
+@media only screen and (max-width: 1199px) {
+    .testimonials-wrapper {
+        margin: 0 -10px;
+    }
+    .testimonials-wrapper .testimonials-col {
+        padding: 0 10px;        
+    }
+    .testimonials-wrapper {
+        margin: 0 -10px;
+    }
+    .testimonials-box {
+        padding: 20px;
+    }
+    .testimonials-title h3 {
+        font-size: 20px;
+    }
+    .testimonials-wrapper.slick-initialized .testimonials-text {
+        height: 210px;
+        padding-right: 15px;
+    }
+    .testimonials-text p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .testimonials-section {
+        padding: 40px 0;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .testimonials-wrapper.slick-initialized {
+        margin-right: -24px;
+    }
+    .testimonials-wrapper .slick-list {
+        padding-right: 50px;
+    }
+}

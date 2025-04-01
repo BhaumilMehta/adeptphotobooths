@@ -68,22 +68,28 @@
 }
 
 .event-cta {
-    padding: 20px;
+    padding: 20px 130px;
     border-radius: 10px;
     background: linear-gradient(108deg, #FF0062 34.06%, #F60 58.85%);
 }
 
-.event-cta .cta-wrapper{
-    margin: 0 -20px -20px -20px;
+.event-cta .cta-wrapper {
+    margin: 0 -20px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.event-cta .cta-wrapper .cat-text {
+    width: auto;
+}
+
+.event-cta .cta-wrapper .cta-btn {
+    flex-shrink: 0;
 }
 
 .event-cta .cta-wrapper > div {
     padding: 0 20px;
-    margin-bottom: 20px;
 }
 
 .cat-text h5,.cat-text p {
@@ -94,6 +100,12 @@
 
 .cat-text h5 {
     margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1399px) {
+    .event-cta {
+        padding: 20px 80px;
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -113,7 +125,7 @@
             padding: 40px 0;
         }
         .event-cta {
-            text-align: center;
+            padding: 20px;
         }
         .cat-text h5 {
             margin-bottom: 10px;
@@ -140,6 +152,26 @@
     
     .tab-inner .tab-col:not(:last-child) {
         margin-bottom: 40px;
+    }
+
+    .tab-list ul::-webkit-scrollbar {
+        width: 0;
+    }
+    .event-cta {
+        text-align: center;
+    }
+    .event-cta .cta-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .event-cta .cta-wrapper .cat-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .event-cta .cta-wrapper > div {
+        padding: 0;
     }
 }
 @media only screen and (max-width: 767px) {

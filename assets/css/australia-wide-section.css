@@ -1,0 +1,340 @@
+.australia-wide-section {
+    background-image: url(../images/australia-wide.png);
+    background-repeat: no-repeat;
+    background-size: 95% 100%;
+    padding-top: 123px;
+    margin: 0;
+    padding-bottom: 55px;
+    position: relative;
+    overflow: hidden;
+}
+.location-map-wraper:before {
+    content: "";
+    display: block;
+    background-image: url(../images/location-content.png);
+    height: 636px;
+    width: 250px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -120px;
+    top: -20px;
+}
+.australia-wide-section .column-left {
+    width: 41%;
+}
+
+.australia-wide-section .column-right {
+    width: 50%;
+}
+
+.australia-wide-section .column-right .content-box {
+    padding: 60px;
+}
+
+.australia-wide-section .column-left .content-box {
+    padding: 60px;
+    text-align: right;
+}
+.australia-wide-section .column-left .content-box p {
+    color: #ffffff;
+}
+.name-with-time-wrap > div {
+    display: none;
+}
+
+.name-with-time-wrap > div:first-child {
+    display: block;
+}
+.location-map-wraper .location-map {
+    position: relative;
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.location-map-wraper .location-map img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.location-map-wraper {
+    position: relative;
+}
+.name-with-time h3 {
+    color: #ffffff;
+    margin-bottom: 0;
+    padding-left: 40px;
+    background-image: url(../images/Clock.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 35px;
+}
+
+.name-with-time h1,.name-with-time h2 {
+    margin-bottom: 0;
+    line-height: 1;
+}
+.name-with-time-wrap {
+    margin-bottom: 90px;
+}
+.location-map-wraper .location-icon span {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+    background-image: url(../images/Intersect-black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.location-map-wraper .location-icon span:hover{
+    background-image: url(../images/Intersect-hover.svg);
+}
+.location-map-wraper .location-icon .perth {
+    bottom: 180px;
+    left: 40px;
+}
+.location-map-wraper .location-icon .adelaide {
+    bottom: 140px;
+    left: 356px;
+}
+
+.location-map-wraper .location-icon .melbourne {
+    bottom: 80px;
+    right: 140px;
+    left: auto;
+}
+
+.location-map-wraper .location-icon .hobart {
+    bottom: -5px;
+    left: auto;
+    right: 100px;
+}
+
+.location-map-wraper .location-icon .sydney {
+    bottom: 150px;
+    left: auto;
+    right: 35px;
+}
+
+.location-map-wraper .location-icon .brisbane {
+    left: auto;
+    right: -5px;
+    bottom: 260px;
+}
+.case-studies-box:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: -30px;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 89.29%, rgba(0, 0, 0, 0.43) 93.74%, rgba(0, 0, 0, 0.70) 100.43%);
+    background-blend-mode: normal, normal, normal, normal, overlay, normal;
+    z-index: -1;
+}
+
+.australia-wide-section .column-left .social-link a img:hover {
+    filter: invert(1) brightness(0);
+}
+.australia-wide-section .column-left .social-link a img {
+    filter: invert(1) brightness(500);
+}
+.australia-wide-section .column-left .social-link h5 {
+    max-width: 100%;
+    margin-bottom: 0;
+    color: #ffffff;
+    margin-right: 40px;
+}
+
+.australia-wide-section .column-left .social-link {
+    position: absolute;
+    bottom: 56px;
+}
+
+@media only screen and (max-width:1399px){
+    .location-map-wraper .location-icon .perth {
+        left: 25px;
+    }  
+    .location-map-wraper .location-icon .adelaide {
+        left: 330px;
+    } 
+    .location-map-wraper .location-icon .melbourne {
+        bottom: 92px;
+        right: 125px;
+    }
+}
+@media only screen and (max-width:1199px){
+    .australia-wide-section .column-left .content-box {
+        padding: 40px;
+    } 
+    .location-map-wraper .location-map {
+        min-height: 480px;
+    }
+    .location-map-wraper .location-icon .adelaide {
+        left: 270px;
+        bottom: 130px;
+    }
+    .location-map-wraper .location-icon .adelaide {
+        left: 270px;
+        bottom: 130px;
+    }
+    .location-map-wraper .location-icon .melbourne {
+        bottom: 90px;
+        right: 100px;
+    }
+    .location-map-wraper .location-icon .hobart {
+        bottom: 30px;
+        left: auto;
+        right: 60px;
+    }
+    .location-map-wraper .location-icon .sydney {
+        bottom: 130px;
+        left: auto;
+        right: 25px;
+    }
+    .location-map-wraper:before {
+        height: 500px;
+        width: 210px;
+        right: -110px;
+        top: 0;
+        background-size: contain;
+    }
+}
+@media only screen and (max-width:991px){
+    .australia-wide-section .column-right {
+        width: 100%;
+    }
+    .australia-wide-section .column-left {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .australia-wide-section .column-left .social-link {
+        position: static;
+        justify-content: center;
+    }
+    .australia-wide-section .column-left .content-box {
+        padding: 0;
+        text-align: center;
+    }
+    .australia-wide-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .location-map-wraper:before{
+        display: none;
+    }
+    .australia-wide-section {
+        background-image: url(../images/australia-wide-mobile.png);
+        background-color: #FF3700;
+        background-size: contain;
+        background-position: center left;
+    }
+    .location-map-wraper {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .name-with-time h3 {
+        padding-left: 30px;
+        background-size: 25px;
+        font-size: 24px;
+    }
+    .australia-wide-section .column-left .social-link {
+        text-align: center;
+        display: block;
+    }
+    .australia-wide-section .column-left .social-link h5 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:575px){
+    .name-with-time-wrap {
+        margin-bottom: 40px;
+    }
+    .location-map-wraper .location-icon .perth {
+        left: 0px;
+        bottom: 129px;
+    }
+    .location-map-wraper .location-icon .adelaide {
+        left: 190px;
+        bottom: 75px;
+    }
+    .location-map-wraper .location-icon .melbourne {
+        bottom: 55px;
+        right: 70px;
+    }
+    .location-map-wraper .location-icon .hobart {
+        bottom: -5px;
+        left: auto;
+        right: 40px;
+    }
+    .location-map-wraper .location-icon .sydney {
+        bottom: 80px;
+        left: auto;
+        right: 10px;
+    }
+    .location-map-wraper .location-icon .brisbane {
+        left: auto;
+        right: -15px;
+        bottom: 160px;
+    }
+    .location-map-wraper .location-map {
+        min-height: 330px;
+    }
+    .location-map-wraper {
+        max-width: 340px;
+    }
+   
+}
+@media only screen and (max-width:374px){
+    .location-map-wraper {
+        max-width: 270px;
+    }
+    .location-map-wraper .location-icon span {
+        height: 30px;
+        width: 30px;
+        border: 2px solid #ffffff;
+    }
+    .location-map-wraper .location-icon .perth {
+        left: 0px;
+        bottom: 129px;
+    }
+    .location-map-wraper .location-icon .adelaide {
+        left: 150px;
+        bottom: 95px;
+    }
+    .location-map-wraper .location-icon .melbourne {
+        bottom: 77px;
+        right: 50px;
+    }
+    .location-map-wraper .location-icon .hobart {
+        bottom: 30px;
+        left: auto;
+        right: 30px;
+    }
+    .location-map-wraper .location-icon .sydney {
+        bottom: 105px;
+        left: auto;
+        right: 5px;
+    }
+    .location-map-wraper .location-icon .brisbane {
+        left: auto;
+        right: -15px;
+        bottom: 160px;
+    }
+}
