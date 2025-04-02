@@ -18,13 +18,14 @@
     position: absolute;
     right: -120px;
     top: -20px;
+    background-size: contain;
 }
 .australia-wide-section .column-left {
     width: 41%;
 }
 
 .australia-wide-section .column-right {
-    width: 50%;
+    width: 55%;
 }
 
 .australia-wide-section .column-right .content-box {
@@ -63,9 +64,9 @@
     top: 0;
     left: 0;
 }
-
 .location-map-wraper {
     position: relative;
+    max-width: 586px;
 }
 .name-with-time h3 {
     color: #ffffff;
@@ -166,6 +167,12 @@
 }
 
 @media only screen and (max-width:1399px){
+    .australia-wide-section .column-right {
+        width: 57%;
+    }
+    .location-map-wraper {
+        max-width: 545px;
+    }
     .location-map-wraper .location-icon .perth {
         left: 25px;
     }  
@@ -178,40 +185,44 @@
     }
 }
 @media only screen and (max-width:1199px){
+   
+    .location-map-wraper {
+        max-width: 400px;
+    }
     .australia-wide-section .column-left .content-box {
         padding: 40px;
     } 
     .location-map-wraper .location-map {
         min-height: 480px;
     }
-    .location-map-wraper .location-icon .adelaide {
-        left: 270px;
-        bottom: 130px;
+    .location-map-wraper .location-icon .perth {
+        left: 15px;
     }
     .location-map-wraper .location-icon .adelaide {
-        left: 270px;
-        bottom: 130px;
+        left: 230px;
+        bottom: 150px;
     }
     .location-map-wraper .location-icon .melbourne {
-        bottom: 90px;
-        right: 100px;
+        bottom: 110px;
+        right: 90px;
     }
     .location-map-wraper .location-icon .hobart {
-        bottom: 30px;
+        bottom: 50px;
         left: auto;
-        right: 60px;
+        right: 50px;
     }
     .location-map-wraper .location-icon .sydney {
-        bottom: 130px;
+        bottom: 150px;
         left: auto;
-        right: 25px;
+        right: 15px;
     }
     .location-map-wraper:before {
         height: 500px;
-        width: 210px;
-        right: -110px;
-        top: 0;
+        width: 240px;
+        right: -160px;
+        top: -30px;
         background-size: contain;
+
     }
 }
 @media only screen and (max-width:991px){
@@ -234,6 +245,9 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
+    .location-map-wraper {
+        margin: auto;
+    }
     .location-map-wraper:before{
         display: none;
     }
@@ -242,10 +256,6 @@
         background-color: #FF3700;
         background-size: contain;
         background-position: center left;
-    }
-    .location-map-wraper {
-        max-width: 500px;
-        margin: auto;
     }
 
     .name-with-time h3 {

@@ -201,20 +201,6 @@ a {
     transition: all 0.6s;
 }
 
-.post-thumbnail {
-    position: relative;
-    padding-bottom: 44%;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
-.post-thumbnail img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 a:hover {
     color: #FFBF00;
 }
@@ -242,6 +228,18 @@ a:active {
 .bg-gradient {
     background: linear-gradient(180deg, #FF0062 3.69%, #F60 96.58%);
 }
+
+.bg-black {
+    background: #000000;
+    padding: 80px 0;
+    margin: 0;
+}
+
+
+.bg-black .content-box > * {
+    color: #ffffff;
+}
+
 
 .defualt_btn,
 input[type="submit"],
@@ -288,7 +286,39 @@ input[type="submit"],
     border: 2px solid #FFBF00;
     color: #FFBF00;
 }
+.two_btn .defualt_btn.border-cta {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: #ffffff;
+}
 
+.two_btn .defualt_btn.border-cta:hover {
+    border: 2px solid #FFBF00;
+    color: #FFBF00;
+}
+.text_btn:hover svg path {
+    fill: #FFBF00;
+}
+
+.two_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.text_btn svg {
+    margin-right: 10px;
+}
+.text_btn {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
 button:active,
 button:focus,
 input[type="button"]:active,
@@ -1165,7 +1195,9 @@ header .topbar {
         font-size: 40px;
         margin-bottom: 20px;
     }
-
+    .bg-black {
+        padding: 60px 0;
+    }
     section {
         margin: 60px 0;
     }
@@ -1210,15 +1242,20 @@ header .topbar {
 }
 
 @media only screen and (max-width:991px) {
-
+    h1, .h1 {
+        font-size: 40px;
+    }
     h2, .h2{
         font-size: 30px;
     }
     h3, .h3{
-        font-size: 30px;
+        font-size: 26px;
     }
     section {
         margin: 40px 0;
+    }
+    .bg-black {
+        padding: 40px 0;
     }
     .desktop_btn {
         display: none;
@@ -1390,7 +1427,12 @@ header .topbar {
 
 @media only screen and (max-width:767px) {
 
-
+    .two_btn {
+        display: block;
+    }
+    .two_btn .text_btn {
+        margin-bottom: 15px;
+    }
     .progress_bar {
         margin-top: 15px;
         margin-bottom: 15px;

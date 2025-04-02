@@ -5,7 +5,7 @@
 .inner-banner-text h1{color:#fff}
 .text-with-slider .wrapper .left-col p{color:#fff}
 .inner-banner-text h2{color:#fff;margin-bottom:20px}
-.inner-banner-text p{margin-bottom:20px}
+.inner-banner-text p{margin-bottom:20px;color: #fff;}
 .text-with-slider .wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .text-with-slider .wrapper .left-col{width:41.7%;padding-bottom:120px}
 .inner-banner-sec.image-slider:after{content:'';width:100%;position:absolute;left:0;bottom:0;height:50px;display:inline-block;background:-o-linear-gradient(top,#ff0062 3.69%,#ff0062 96.58%);background:-webkit-gradient(linear,left top,left bottom,color-stop(3.69%,#ff0062),color-stop(96.58%,#ff0062));background:linear-gradient(180deg,#ff0062 3.69%,#ff0062 96.58%);z-index:-1}

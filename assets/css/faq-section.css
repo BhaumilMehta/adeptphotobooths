@@ -114,6 +114,12 @@
 .bg-white .title-with-btn {
     display: none;
 }
+.faq-section.bg-white .list-with-search-btn {
+    display: flex;
+}
+.faq-section  .list-with-search-btn {
+    display: none;
+}
 @media only screen and (max-width: 1199px) {
   
 }

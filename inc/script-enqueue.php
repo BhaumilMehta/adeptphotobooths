@@ -13,6 +13,18 @@ function adeptphotobooths_scripts() {
 	wp_enqueue_script('magnific-popup-min-js', get_template_directory_uri() . '/assets/js/magnific-popup.min.js', array(), time(), true);
 	wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), time(), true);
 	wp_enqueue_script('slick-min', get_template_directory_uri() . '/assets/js/slick.min.js', array('jquery'), time(), true);
+
+	if(is_archive() || is_home() && !is_front_page()){
+		wp_enqueue_style('archive-banner-css', get_template_directory_uri() . '/assets/css/inner-banner-section.css', array(), time(), 'all');
+		wp_enqueue_style('case-studies-section-css', get_template_directory_uri() . '/assets/css/case-studies-section.css', array(), time(), 'all');
+		wp_enqueue_style('archive-case-studies-css', get_template_directory_uri() . '/assets/css/archive-case-studies.css', array(), time(), 'all');
+		
+	}
+	if(is_singular()){
+		wp_enqueue_style('archive-case-studies-css', get_template_directory_uri() . '/assets/css/archive-case-studies.css', array(), time(), 'all');
+		wp_enqueue_style('gallery-section', get_template_directory_uri() . '/assets/css/gallery-section.css', array(), time(), 'all');
+		wp_enqueue_style('testimonials-section', get_template_directory_uri() . '/assets/css/testimonials-section.css', array(), time(), 'all');
+	}
 	
 	/*--------- DD Enqueue Styles ---------*/
 	global $post;
