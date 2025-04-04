@@ -104,7 +104,84 @@
     display: none;
     margin-top: 20px;
 }
+.client-logo-seciton.bg-white {
+    background: #ffffff;
+    margin: 80px 0;
+    padding: 0;
+}
+.one-line-text h4 {
+    color: #fff;
+}
+.bg-white .one-line-text h4 {
+    color: #000000;
+}
+.one-line-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.client-logo-seciton.bg-white .text-with-btn h4 {
+    color: #000000;
+}
+.bg-white .client-logo .text-block h2 {
+    color: #1E1E1E;
+}
+
+.bg-white .client-logo-slider > div:nth-child(even) .text-block h2 {
+    -webkit-text-stroke-color: #1E1E1E;
+}
+
+
+.event-cta {
+    padding: 20px 130px;
+    border-radius: 10px;
+    background: linear-gradient(108deg, #FF0062 34.06%, #F60 58.85%);
+}
+
+.event-cta .cta-wrapper {
+    margin: 0 -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-cta .cta-wrapper .cat-text {
+    width: auto;
+}
+
+.event-cta .cta-wrapper .cta-btn {
+    flex-shrink: 0;
+}
+
+.event-cta .cta-wrapper > div {
+    padding: 0 20px;
+}
+
+.cat-text h5,.cat-text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+}
+.cat-text h5 {
+    margin-bottom: 0;
+}
+.client-logo-seciton .event-cta {
+    margin-top: 40px;
+}
+@media only screen and (max-width:1399px){
+    .event-cta {
+        padding: 20px 80px;
+    }
+}
 @media only screen and (max-width:1199px){
+
+    .event-cta {
+        padding: 20px;
+    }
+    .cat-text h5 {
+        margin-bottom: 10px;
+    }
+
     .client-logo .text-block h2 {
         color: #FFF;
         font-size: 80px;
@@ -118,8 +195,27 @@
         width: 100%;
         height: 120px;
     }
+    .client-logo-seciton.bg-white {
+        margin: 60px 0;
+    }
 }
 @media only screen and (max-width:991px){
+    .event-cta {
+        text-align: center;
+    }
+    .event-cta .cta-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .event-cta .cta-wrapper .cat-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .event-cta .cta-wrapper > div {
+        padding: 0;
+    }
     .client-logo .text-block h2 {
         font-size: 60px;
     }
@@ -143,8 +239,18 @@
         width: 100%;
         height: 80px;
     }
+    .client-logo-seciton.bg-white .text-with-btn h4 {
+        text-align: center;
+    }
 }
 @media only screen and (max-width:767px){
+    .cat-text h5, .cat-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .client-logo-seciton.bg-white {
+        margin: 40px 0;
+    }
     .client-logo .text-block .hover-box .img-wraper {
         width: 100%;
         height: 80px;

@@ -2,12 +2,109 @@
 .two-col-text-sec .text-block>*{color:#fff}
 .two-col-text-sec .col-block .text-block .defualt_btn{color:#000}
 .two-col-text-sec .col-block .text-block .defualt_btn:hover{color: #FFBF00;}
-.two-col-text-sec .text-block h3,.two-col-text-sec .text-block h4,.two-col-text-sec .text-block h5{font-size:20px}
 .two-col-text-sec .col-block{width:50%;padding:0 20px}
 .two-col-text-sec .column-row{margin:0 -20px}
+.two-col-text-sec .text-block h3{
+    font-size: 34px;
+}
+.activate-tocaptivate .content-box ul li {
+    color: #ffffff;
+    break-inside: avoid;
+}
 
+.activate-tocaptivate .content-box ul {
+    column-count: 3;
+}
+.activate-tocaptivate h5 {
+    margin-bottom: 30px;
+}
+.activate-tocaptivate .content-box ul li:before {
+    color: #FFBF00;
+    -webkit-text-fill-color: #FFBF00;
+}
+.activate-tocaptivate {
+    margin-top: 80px;
+}
+
+.simpletext_iner .simpletext_row_box {
+    opacity: 0.3;
+}
+
+.simpletext_iner .simpletext_row_box.slick-active {
+    opacity: 1;
+}
+.simpletext_iner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.simpletext_iner .simpletext_row_box {
+    padding: 0 10px;
+}
+
+.simpletext_iner .simpletext_row_box h4 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 34px;
+}
+
+.simpletext_slider_width_btn {
+    margin-top: 50px;
+}
+
+.simpletext_slider_width_btn .progress_arrow {
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.simpletext_slider_width_btn .progress_arrow .defualt_btn {
+    margin: 0 20px;
+}
+
+.two-col-text-sec.bg-gradient .progress_next_arrow {
+    margin-left: 0;
+}
+.simpletext_iner .slick-track {
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:1199px){
+    .activate-tocaptivate {
+        margin-top: 60px;
+    }
+    .simpletext_iner .simpletext_row_box h4 {
+
+        font-size: 26px;
+    }
+}
 @media only screen and (max-width:991px){
     .two-col-text-sec{padding:40px 0}
     .two-col-text-sec .col-block:not(:last-child){margin-bottom:30px}
     .two-col-text-sec .col-block{width:100%}
+    .two-col-text-sec .text-block h3{
+        font-size: 26px;
+    }
+    .activate-tocaptivate {
+        margin-top: 40px;
+    }
+    
+}
+@media only screen and (max-width:767px){
+    .activate-tocaptivate .content-box ul {
+        column-count: 1;
+    }
+    .simpletext_iner .simpletext_row_box h4 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:374px){
+
+    .simpletext_slider_width_btn .progress_arrow .defualt_btn {
+        margin: 0 10px;
+        font-size: 14px;
+    }
 }

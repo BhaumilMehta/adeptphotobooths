@@ -1,0 +1,98 @@
+.suppliers-section .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -30px;
+}
+
+.suppliers-section .logo-grid .logo-card-iner {
+    width: 33.33%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.suppliers-section .logo-grid .logo-card-iner .logo-card-box {
+    padding: 2px;
+    background: linear-gradient(146.93deg, #FF0062 19.73%, #FF6600 78.34%);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card {
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 20px 62px 20px;
+    position: relative;
+    height: 100%;
+}
+
+.logo-card-item img {
+    max-width: 296px;
+    min-height: 105px;
+    width: 100%;
+}
+
+.logo-card-item {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card h4 {
+    text-align: center;
+}
+
+.suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card .button-group {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 -5px;
+}
+
+.suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card .button-group .defualt_btn {
+    width: 50%;
+
+    margin: 0 5px;
+}
+@media only screen and (max-width:1199px){
+    .logo-card-item img {
+        min-height: 90px;
+    }
+    .suppliers-section .logo-grid {
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: -20px;
+    }
+    .suppliers-section .logo-grid .logo-card-iner {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card .button-group .defualt_btn {
+        font-size: 14px;
+    }
+    .suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card .button-group {
+        padding: 0 15px;
+    }
+    .suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card {
+        padding: 15px 15px 62px 15px;
+    }
+    .suppliers-section .logo-grid .logo-card-iner .logo-card-box .logo-card .button-group {
+        bottom: 15px;
+    }
+}
+@media only screen and (max-width:991px){
+    .suppliers-section .logo-grid .logo-card-iner{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:767px){
+    .suppliers-section .logo-grid .logo-card-iner{
+        width: 100%;
+    }
+}

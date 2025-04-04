@@ -1,0 +1,69 @@
+.about-video-content-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+
+.about-video-content-wraper .about-video-iner {
+    width: 33.33%;
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.about-video-content h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about-video-content h3 span {
+    leading-trim: both;
+    text-edge: cap;
+    -webkit-text-stroke-width: 1.84px;
+    -webkit-text-stroke-color: #000;
+    background: transparent;
+    display: block;
+}
+.video-img img{width:100%;position:absolute;left:0;top:0;height:100%;-o-object-fit:cover;object-fit:cover;border-radius:20px}
+.video-img{position:relative;padding-bottom:56.25%;display:block}
+.video-icon{position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:358px;height:194px}
+.video-icon:before{opacity:.4;background:-o-radial-gradient(50% 50%,50% 50%,#000 0,rgba(0,0,0,0) 100%);background:radial-gradient(50% 50% at 50% 50%,#000 0,rgba(0,0,0,0) 100%);-webkit-filter:blur(32px);filter:blur(32px);content:'';width:100%;position:absolute;left:0;height:100%;z-index:-1;top:0;border-radius:358px}
+.video-icon img{width:94px;position:static;height:94px;-o-object-fit:contain;object-fit:contain;border-radius:0}
+.video-icon:hover rect{-webkit-transition:all .6s;-o-transition:all .6s;transition:all .6s}
+.video-icon:hover svg rect{fill:#FFBF00}
+.video-icon:hover svg path{fill:#fff}
+
+.about-video-section .about-video .video-block {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-video-section .about-video {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width:1199px){
+    .about-video-content h3 {
+        font-size: 26px;
+    }
+    .about-video-content-wraper {
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: -20px;
+    }
+    .about-video-content-wraper .about-video-iner {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width:991px){
+    .about-video-content-wraper .about-video-iner {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:767px){
+    .about-video-content-wraper .about-video-iner {
+        width: 100%;
+    }
+}

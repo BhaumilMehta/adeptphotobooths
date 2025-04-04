@@ -1,0 +1,108 @@
+.whyhire-photobooths-wrap {
+    margin-top: 40px;
+}
+
+.whyhire-photobooths-slider {
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -20px;
+    flex-wrap: wrap;
+}
+.whyhire-photobooths-slider .slick-track {
+    display: flex;
+}
+.whyhire-photobooths-slider .whyhire-photobooths-slide .whyhire-photobooths-box-boxes:hover,
+.whyhire-photobooths-slider .whyhire-photobooths-slide.slick-current .whyhire-photobooths-box-boxes {
+    background: var(--Pink-Orange, linear-gradient(147deg, #FF0062 19.73%, #F60 78.34%));
+}
+.whyhire-photobooths-slider .whyhire-photobooths-slide .whyhire-photobooths-box-boxes {
+    height: 100%;
+    padding: 3px;
+    background: #dddddd;
+    border-radius: 10px;
+    transition: all 0.6s;
+}
+.whyhire-photobooths-slider .whyhire-photobooths-slide {
+    width: 33.33%;
+    padding: 0 10px;
+    counter-increment: step-counter;
+    height: auto;
+    margin-bottom: 20px;
+}
+.whyhire-photobooths-slider .whyhire-photobooths-slide .whyhire-photobooths-box {
+    background: #FFF;
+    padding: 25px;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+.whyhire-photobooths-box span img {
+    height: 50px;
+    width: 30px;
+}
+.whyhire-photobooths-box span {
+    background: var(--Pink-Orange, linear-gradient(147deg, #FF0062 19.73%, #F60 78.34%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 27px;
+    display: flex;
+    align-items: end;
+
+}
+
+.whyhire-photobooths-slider .whyhire-photobooths-slide span:after {
+    content: counter(step-counter);
+    font-size: 60px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 1;
+}
+.whyhire-photobooths-wrap .slick-list.draggable {
+     padding-right: 200px;       
+}
+@media only screen and (min-width:1400px){
+    .whyhire-photobooths-wrap{
+        margin-right: calc(-100vw / 2 + 1238px / 2);
+    }
+}
+@media only screen and (max-width:1399px){
+    .whyhire-photobooths-wrap {
+        margin-right: calc(-100vw / 2 + 1112px / 2);
+    }
+}
+@media only screen and (max-width:1199px){
+    .whyhire-photobooths-wrap {
+        margin-right: calc(-100vw / 2 + 932px / 2);
+    }
+    .whyhire-photobooths-wrap .slick-list.draggable {
+        padding-right: 100px;
+    }
+}
+@media only screen and (max-width:991px){
+    .whyhire-photobooths-slider .whyhire-photobooths-slide {
+        width: 50%;
+    }
+    .whyhire-photobooths-wrap {
+        margin-right: calc(-100vw / 2 + 692px / 2);
+    }
+
+}
+@media only screen and (max-width:767px){
+    .whyhire-photobooths-slider .whyhire-photobooths-slide {
+        width: 100%;
+    }
+    .whyhire-photobooths-wrap {
+        margin-right: calc(-100vw / 2 + 516px / 2);
+    }
+    .whyhire-photobooths-wrap .slick-list.draggable {
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width:575px){
+    .whyhire-photobooths-wrap {
+        margin-right:-24px;
+    }
+}

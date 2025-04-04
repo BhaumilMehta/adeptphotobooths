@@ -1,0 +1,119 @@
+.title-with-content-repeater .title-block {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-with-content-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-bottom: -50px;
+}
+
+.title-with-content-row .title-with-content-iner {
+    width: 25%;
+    padding: 0 25px;
+    margin-bottom: 50px;
+}
+
+.title-with-content-box img {
+    height: 32px;
+    width: 32px;
+    margin-bottom: 10px;
+}
+.event-cta {
+    padding: 20px 130px;
+    border-radius: 10px;
+    background: linear-gradient(108deg, #FF0062 34.06%, #F60 58.85%);
+}
+
+.event-cta .cta-wrapper {
+    margin: 0 -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-cta .cta-wrapper .cat-text {
+    width: auto;
+}
+
+.event-cta .cta-wrapper .cta-btn {
+    flex-shrink: 0;
+}
+
+.event-cta .cta-wrapper > div {
+    padding: 0 20px;
+}
+
+.cat-text h5,.cat-text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+}
+.cat-text h5 {
+    margin-bottom: 0;
+}
+.bg-black .event-cta {
+    background: #ffffff;
+}
+
+.bg-black .cat-text h5 {
+    color: #000000;
+}
+.title-with-content-repeater .event-cta {
+    margin-top: 40px;
+}
+@media only screen and (max-width:1399px){
+    .event-cta {
+        padding: 20px 80px;
+    }
+    .title-with-content-row {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: -30px;
+    }
+    .title-with-content-row .title-with-content-iner {
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:1199px){
+    .event-cta {
+        padding: 20px;
+    }
+    .cat-text h5 {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:991px){
+    .event-cta {
+        text-align: center;
+    }
+    .event-cta .cta-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .event-cta .cta-wrapper .cat-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .event-cta .cta-wrapper > div {
+        padding: 0;
+    }
+    .title-with-content-row .title-with-content-iner {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:767px){
+    .cat-text h5, .cat-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .title-with-content-row .title-with-content-iner {
+        width: 100%;
+    }
+}

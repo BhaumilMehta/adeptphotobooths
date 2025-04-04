@@ -131,6 +131,56 @@
 
 
 
+/* archive  photo booths*/
+.archive-photo-booths-section .booth_row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -20px;
+}
+
+.archive-photo-booths-section .booth_row .booth_column {
+    width: 25%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.photo-booths-filter a {
+    display: inline-block;
+    align-items: center;
+    padding: 8px 20px;
+    border: 2px solid #000;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0 6px 6px;
+    border-radius: 5px;
+}
+
+.photo-booths-filter a img {
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.photo-booths-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.photo-booths-filter a:hover {
+    background: #000;
+    color: #ffffff;
+}
+
+.photo-booths-filter a:hover img {
+    filter: invert(1) brightness(1);
+}
+
 @media only screen and (min-width:992px){
     .single-post-content .container {
         max-width: 800px;
@@ -162,6 +212,10 @@
         padding: 0 15px;
         margin-bottom: 30px;
     }
+
+    .archive-photo-booths-section .booth_row .booth_column {
+        width: 33.33%;
+    }
 }
 
 @media only screen and (max-width:991px){
@@ -191,12 +245,20 @@
     .blog-post-list .blog-post-iner {
         width: 50%;
     }
+
+    .archive-photo-booths-section .booth_row .booth_column {
+        width: 50%;
+    }
+
 }
 @media only screen and (max-width:767px){
     .case-studies-post-list .case-studies-post {
         width: 100%;
     }
     .blog-post-list .blog-post-iner {
+        width: 100%;
+    }
+    .archive-photo-booths-section .booth_row .booth_column {
         width: 100%;
     }
 }

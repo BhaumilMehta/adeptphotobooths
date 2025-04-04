@@ -1,0 +1,128 @@
+.photo-booths-plans-section .event-cta {
+    margin-top: 40px;
+}
+
+.photo-booths-plans-section .title_block {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.photo-booths-plans-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -40px;
+}
+
+.photo-booths-plans-iner {
+    width: 33.33%;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.photo-booths-plans-box {
+    border-radius: 10px;
+    background: #F4F4F4;
+    padding: 30px 30px 70px 30px;
+    position: relative;
+    height: 100%;
+}
+
+.photo-booths-plans-box img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.photo-booths-plans-box ul li {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF0062 19.73%, #F60 78.34%);
+    padding: 2px;
+}
+
+.photo-booths-plans-box ul li a p {
+    padding: 8px 20px;
+    display: block;
+    background: linear-gradient(147deg, #FF0062 19.73%, #F60 78.34%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 10px;
+}
+.photo-booths-plans-box ul li a {
+    display: block;
+    background: #F4F4F4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.photo-booths-plans-box ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.photo-booths-plans-box ul {
+    margin-bottom: 20px;
+}
+.bg-gradient .photo-booths-plans-box {
+    background: #ffffff;
+}
+
+.bg-gradient .photo-booths-plans-box ul li a {
+    background: #ffffff;
+}
+.photo-booths-plans-box .defualt_btn {
+    position: absolute;
+    bottom: 30px;
+}
+.bg-gradient {
+    margin: 0;
+    padding: 80px 0;
+}
+
+.bg-gradient .title_block > * {
+    color: #ffffff;
+}
+
+.bg-gradient .event-cta {
+    background: #ffffff;
+}
+
+.bg-gradient .cat-text > * {
+    color: #000000;
+}
+.bg-gradient .defualt_btn.btn_white {
+    background: #FFBF00;
+    border: 2px solid #FFBF00;
+}
+
+.bg-gradient .defualt_btn.btn_white:hover {
+    background-color: transparent;
+}
+
+@media only screen and (max-width:1199px){
+    .photo-booths-plans-box {
+        padding: 24px 24px 70px 24px;
+    }
+    .photo-booths-plans-wrap {
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: -20px;
+    }
+    .photo-booths-plans-iner {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:991px){
+    .photo-booths-plans-iner {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .photo-booths-plans-iner {
+        width: 100%;
+    }
+}

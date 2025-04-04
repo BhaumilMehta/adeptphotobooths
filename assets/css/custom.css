@@ -181,17 +181,47 @@ p:last-child {
 
 ul,
 ol {
-    margin-left: 20px;
+    margin-left: 0;
     margin-bottom: 0;
 }
 
+.content-box ul li {
+    color: #000000;
+     list-style-type: none;
+     padding-left: 20px;
+     font-size: 20px;
+     font-weight: 600;
+     position: relative;
+     break-inside: auto;
+     margin-bottom: 10px;
+ }
+ .content-box ul li:before {
+    content: "*";
+    display: block;
+    color: var(--Gradient, linear-gradient(90deg, #FFBF00 0%, #FF0062 100%));
+    background: var(--Pink-Orange, linear-gradient(147deg, #FF0062 19.73%, #F60 78.34%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 2px;
+    line-height: 1;
+}
+
+
 li {
-    color: #FFF;
+    color: #000000;
     font-family: "Alexandria", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    list-style-type: none;
 }
 
 a {
@@ -228,7 +258,10 @@ a:active {
 .bg-gradient {
     background: linear-gradient(180deg, #FF0062 3.69%, #F60 96.58%);
 }
-
+.bg-white {
+    background: #ffffff;
+    padding: 80px 0;
+}
 .bg-black {
     background: #000000;
     padding: 80px 0;
@@ -240,6 +273,16 @@ a:active {
     color: #ffffff;
 }
 
+.bg-black h2,
+.bg-black p,
+.bg-black li,
+.bg-black h4,
+.bg-black h1,
+.bg-black h3,
+.bg-black h5,
+.bg-black h6 {
+    color: #ffffff;
+}
 
 .defualt_btn,
 input[type="submit"],
@@ -256,6 +299,7 @@ input[type="submit"],
     border: 2px solid #FFBF00;
     background: #FFBF00;
     display: inline-block;
+    text-align: center;
     
 }
 
@@ -510,6 +554,77 @@ body .ff-default .ff-el-input--label label {
     font-family: "Alexandria", sans-serif;
 }
 
+#blog-loader {
+    text-align: center;
+    padding: 20px;
+}
+
+#blog-loader img {
+    width: 50px;
+}
+
+#blog-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#blog-loader:before {
+    content: "";
+    display: block;
+    background: #000000;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*pagination Desdign*/
+.pagination .page-numbers:hover img {
+    filter: invert(0) brightness(0);
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.pagination .page-numbers {
+    width: 49px;
+    height: 49px;
+    border-radius: 24.5px;
+    border: 2px solid #FFBF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagination .page-numbers:hover,
+.pagination .page-numbers.current {
+    background: #FFBF00;
+}
+
+
+
+
 /* Breadcrumbs CSS Start*/
 .home .breadcrumb_sec {
     display: none
@@ -619,7 +734,9 @@ body .ff-default .ff-el-input--label label {
 .progress_bar {
     margin-top: 44px;
 }
-
+.bg-black .progress {
+    background: rgba(255, 255, 255, 0.20);
+}
 .progress {
     position: relative;
     display: block;
@@ -693,6 +810,51 @@ body .ff-message-success {
     -webkit-text-fill-color: transparent;
     font-weight: 700;
 }
+
+
+
+
+
+.event-cta {
+    padding: 20px 130px;
+    border-radius: 10px;
+    background: linear-gradient(108deg, #FF0062 34.06%, #F60 58.85%);
+}
+
+.event-cta .cta-wrapper {
+    margin: 0 -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-cta .cta-wrapper .cat-text {
+    width: auto;
+}
+
+.event-cta .cta-wrapper .cta-btn {
+    flex-shrink: 0;
+}
+
+.event-cta .cta-wrapper > div {
+    padding: 0 20px;
+}
+
+.cat-text h5,.cat-text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.cat-text h5 {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
 /*************************************************
                  header Css
 *************************************************/
@@ -1118,17 +1280,6 @@ header .topbar {
 }
 
 @media only screen and (max-width:1399px) {
-    body {
-        font-size: 16px;
-    }
-
-    li {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 16px;
-    }
 
     .site-branding {
         max-width: 230px;
@@ -1140,7 +1291,9 @@ header .topbar {
         font-size: 16px;
         padding: 10px 15px;
     }
-
+    .event-cta {
+        padding: 20px 80px;
+    }
     /*************************************************
                  Header Css
     *************************************************/
@@ -1186,6 +1339,24 @@ header .topbar {
 }
 
 @media only screen and (max-width:1199px) {
+    .content-box ul li:before {
+        top: 0px;
+    }
+    .content-box ul li {
+        font-size: 16px;
+    }
+    body {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
 
     h1, .h1{
         font-size: 50px;
@@ -1201,11 +1372,17 @@ header .topbar {
     section {
         margin: 60px 0;
     }
-
+    .bg-white {
+        background: #ffffff;
+        padding: 60px 0;
+    }
     .list-with-search-btn .seacrh-btn {
         max-width: 320px;
         width: 100%;
         margin-left: 30px;
+    }
+    .event-cta {
+        padding: 20px;
     }
    /*progress Bar*/
 
@@ -1257,6 +1434,10 @@ header .topbar {
     .bg-black {
         padding: 40px 0;
     }
+    .bg-white {
+        background: #ffffff;
+        padding: 40px 0;
+    }
     .desktop_btn {
         display: none;
     }
@@ -1268,6 +1449,23 @@ header .topbar {
         width: 100%;
         margin-left: 0;
         margin-top: 20px;
+    }
+
+    .event-cta {
+        text-align: center;
+    }
+    .event-cta .cta-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .event-cta .cta-wrapper .cat-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .event-cta .cta-wrapper > div {
+        padding: 0;
     }
     /*************************************************
                  Header Css
@@ -1439,6 +1637,14 @@ header .topbar {
     }
     .progress_arrow {
         margin-left: 30px;
+    }
+    .cat-text h5, .cat-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .pagination .page-numbers {
+        width: 40px;
+        height: 40px;
     }
     /*************************************************
                  Footer  Css

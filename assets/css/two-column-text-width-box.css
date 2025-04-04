@@ -1,0 +1,35 @@
+.tow_columntext_width_box .title_block {
+    text-align: left;
+}
+
+.tow_columntext_width_box .column-left {
+    width: 51%;
+}
+
+.tow_columntext_width_box .column-right {
+    width: 45%;
+}
+
+.tow_columntext_width_box .single-box {
+    border-radius: 20px;
+    border: 1px solid #C0C0C0;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+
+@media only screen and (max-width:1199px){
+    
+}
+@media only screen and (max-width:991px){
+    .tow_columntext_width_box .column-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .tow_columntext_width_box .column-left {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:767px){
+
+}

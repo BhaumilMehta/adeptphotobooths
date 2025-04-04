@@ -7,8 +7,9 @@
 }
 
 .gallery-slider {
-    padding: 80px 0;
+    /* padding: 80px 0; */
    /*  pointer-events: none; */
+      margin-top: 80px;
 }
 
 .gallery-slider .gallery-img img {
@@ -34,7 +35,7 @@
         height: 300px;
     }
     .gallery-slider {
-        padding: 60px 0;
+      margin-top: 60px;
     }
 }
 @media only screen and (max-width: 991px) {

@@ -25,6 +25,11 @@
     height: inherit;
 }
 
+.testimonials-wrapper .testimonials-col:only-child .testimonials-text {
+    height: inherit;
+    padding: 0;
+    overflow: auto;
+}
 .testimonials-box {
     border-radius: 20px;
     background: #FFF;
@@ -49,22 +54,22 @@
     line-height: normal;
 }
 
-.testimonials-wrapper.slick-initialized .testimonials-text {
+.testimonials-wrapper .testimonials-text {
     height: 220px;
     overflow-y: auto;
     padding-right: 23px;
 }
 
-.testimonials-wrapper.slick-initialized .testimonials-text::-webkit-scrollbar {
+.testimonials-wrapper .testimonials-text::-webkit-scrollbar {
     width: 4px;
 }
 
-.testimonials-wrapper.slick-initialized .testimonials-text::-webkit-scrollbar-thumb {
+.testimonials-wrapper .testimonials-text::-webkit-scrollbar-thumb {
     border-radius: 11.406px;
     background: linear-gradient(90deg, #FFBF00 0%, #FF0062 186.14%), #000;
 }
 
-.testimonials-wrapper.slick-initialized .testimonials-text::-webkit-scrollbar-track {
+.testimonials-wrapper .testimonials-text::-webkit-scrollbar-track {
     background: #ccc;
     border-radius: 11.406px;
 }
@@ -102,7 +107,7 @@
     .testimonials-title h3 {
         font-size: 20px;
     }
-    .testimonials-wrapper.slick-initialized .testimonials-text {
+    .testimonials-wrapper .testimonials-text {
         height: 210px;
         padding-right: 15px;
     }
@@ -117,7 +122,7 @@
     }
 }
 @media only screen and (max-width: 575px) {
-    .testimonials-wrapper.slick-initialized {
+    .testimonials-wrapper {
         margin-right: -24px;
     }
     .testimonials-wrapper .slick-list {

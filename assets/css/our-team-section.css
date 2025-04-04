@@ -1,0 +1,181 @@
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+}
+
+.team-card {
+    text-align: center;
+    background-color: #000000;
+    height: 100%;
+}
+.team-card .member-info > * {
+    color: #ffffff;
+    margin: 0;
+}
+
+.team-card .member-info {
+    padding: 10px;
+}
+.team-card-box {
+    width: 33.33%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+
+.member-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3/3;
+}
+
+.before-image {
+    display: none;
+}
+.slider-handle {
+    display: none;
+}
+
+.image-slider.active .before-image {
+    display: block;
+}
+
+.image-slider.active .slider-handle {
+    display: block;
+}
+
+.image-slider.active button.click-me-btn.hidden {
+    display: none;
+}
+
+/* Regular image styles */
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .member-image:not(.has-slider) img {
+    transform: scale(1.05);
+}
+
+/* Before/After Slider Styles */
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: grab;
+}
+
+.after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.before-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: left;
+}
+
+.slider-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    cursor: col-resize;
+    transform: translateX(-50%);
+}
+
+.slider-handle::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    background-image: url(../images/AI.svg);
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .slider-handle::after {
+    content: '↔';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-size: 20px;
+} */
+.click-me-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 8px 10px 8px 30px;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    border-radius: 0 40px 40px 0;
+    background: linear-gradient(90deg, #FF0062 0%, #F60 100%);
+}
+.click-me-btn:before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    background-image: url(../images/AI.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    top: 0;
+    left: -15px;
+}
+.click-me-btn:hover {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Responsive Adjustments */
+@media only screen and (max-width:1199px){
+    
+}
+@media only screen and (max-width:991px){
+    .team-card-box {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:767px){
+    .team-card-box {
+        width: 100%;
+    }
+}

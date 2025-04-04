@@ -8,7 +8,13 @@
     color: #fff;
     margin-bottom: 10px;
 }
-
+.our-process-section  h3,
+.our-process-section  h4,
+.our-process-section  h5,
+.our-process-section  h6,
+.our-process-section  li{
+    color: #fff;
+}
 .our-process-section .heading-title {
     margin-bottom: 40px;
 }
