@@ -1,0 +1,264 @@
+.slider-with-faq-section {
+    background: linear-gradient(180deg, #FF0062 3.69%, #F60 96.58%);
+    margin: 0;
+    padding: 80px 0;
+    overflow: hidden;
+}
+.home .slider-with-faq-section {
+    background: linear-gradient(180deg, rgba(255, 55, 0, 0.00) 0%, #FF0062 3.69%, #F60 96.58%, rgba(255, 55, 0, 0.00) 100%);
+    padding: 170px 0;
+    margin-top: -80px;
+}
+.slider-with-faq-section .title_block {
+    text-align: left;
+}
+.slider-with-faq-section .title_block p {
+    font-size: 20px;
+}
+.slider-with-faq-section .title_block >* {
+    color: #ffffff;
+}
+
+.slider-with-faq-section .column-right {
+    width: 60%;
+}
+
+.slider-with-faq-section .column-left {
+    width: 36%;
+}
+
+.adeptphoto-question h3 {
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    padding-right: 60px;
+    position: relative;
+}
+.adeptphoto-question h3:before {
+    content: "";
+    display: block;
+    background-image: url(../images/plus-white.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 0;
+    height: 48px;
+    width: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.adeptphoto-accordion-box.active .adeptphoto-question h3:before{
+    background-image: url(../images/minus-white.svg);
+   
+}
+.adeptphoto-accordion-box.active + .adeptphoto-accordion-box {
+    border-top: 0;
+}
+.adeptphoto-accordion-box {
+    border-top: 1px solid #ffffff;
+}
+.adeptphoto-accordion-box:first-child{
+    border-top: 0;
+}
+.adeptphoto-answer ul li {
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid #FFA991;
+    padding: 9px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.adeptphoto-question {
+    padding: 20px 0;
+    cursor: pointer;
+}
+.adeptphoto-answer p {
+    color: #FFDED5;
+}
+
+.adeptphoto-btn {
+    border-radius: 0px 0px 7px 7px;
+    background: #FFF;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% + 30px);
+    position: relative;
+    left: -15px;
+}
+.adeptphoto-btn .defualt_btn {
+    width: calc(50% - 7px);
+    font-size: 16px;
+}
+.progress-line {
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.20);
+    display: block;
+    height: 6px;
+    width: 100%;
+    margin-bottom: 24px;
+    border-radius: 11.406px;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0s;
+    background-image: linear-gradient(to right, #FFD452, #FFD452);
+}
+.adeptphoto-answer {
+    display: none;
+}
+
+.adeptphoto-slider {
+    background-image: url(../images/slider-mask.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 451px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    max-width: 432px;
+}
+.adeptphoto-slide {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.adeptphoto-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.adeptphoto-slide.slide-middle {
+    -webkit-mask-image: url(../images/slider-middle-mask.svg);
+     mask-image: url(../images/slider-middle-mask.svg); 
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 91% 100%;
+    min-width: 212px;
+    -webkit-mask-position: center;
+}
+.adeptphoto-slide.slide-left {
+    -webkit-mask-image: url(../images/slider-left-mask.svg);
+    mask-image: url(../images/slider-left-mask.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 87% 95%;
+    min-width: 96px;
+    -webkit-mask-position: right bottom;
+}
+.adeptphoto-slide.slide-right {
+    -webkit-mask-image: url(../images/slider-right-mask.svg);
+    mask-image: url(../images/slider-right-mask.svg);
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 87% 95%;
+    min-width: 96px;
+    -webkit-mask-position: left bottom;
+}
+.adeptphoto-slide.slide-left img {
+    object-position: left;
+}
+
+.adeptphoto-slider img {
+    object-position: right;
+}
+.slider-with-faq-section .progress_arrow {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: -30px;
+}
+.adeptphoto-slide a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.adeptphoto-accordion-box.active {
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    padding: 0 15px 0;
+}
+
+.slider-with-faq.switch .column-row {
+    flex-direction: row-reverse;
+}
+.slider-with-faq-wrap {
+    margin-bottom: -70px;
+}
+.slider-with-faq-wrap .column-row{
+    margin-bottom: 70px;
+}
+@media only screen and (max-width:1399px){
+    .slider-with-faq-section .column-right {
+        width: 58%;
+    }
+    .slider-with-faq-section .column-left {
+        width: 39.5%;
+    }
+    .adeptphoto-btn .defualt_btn {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:1199px){
+    .slider-with-faq-section .column-left {
+        width: 47.4%;
+    }
+    .slider-with-faq-section .column-right {
+        width: 51%;
+    }
+    .adeptphoto-question h3 {
+        font-size: 26px;
+    }
+    .adeptphoto-btn {
+        display: block;
+    }
+    .adeptphoto-btn .defualt_btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .adeptphoto-answer ul li {
+        font-size: 16px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .adeptphoto-question {
+        padding: 15px 0;
+    }
+}
+@media only screen and (max-width:991px){
+    .slider-with-faq-section .column-right {
+        width: 100%;
+    }
+    .slider-with-faq-section .column-left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .adeptphoto-slider {
+        margin: auto;
+    }
+   
+    .adeptphoto-btn .defualt_btn {
+        font-size: 16px;
+    }
+    .home .slider-with-faq-section {
+        margin-top: -110px;
+    }
+}
+@media only screen and (max-width:575px){
+    .adeptphoto-slide.slide-left {
+        min-width: 73px;
+    }
+    .adeptphoto-slider {
+        height: 295px;
+        max-width: 272px;
+    }
+    .adeptphoto-slide.slide-middle {
+        -webkit-mask-size: 96% 100%;
+        min-width: 132px;
+    }
+    .adeptphoto-slide.slide-right {
+        min-width: 73px;
+    }
+}

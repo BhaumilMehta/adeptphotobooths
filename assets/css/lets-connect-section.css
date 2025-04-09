@@ -141,6 +141,9 @@
     .lets-connect-wraper {
         margin-right: calc(-110vw / 2 + 575px / 2);
     }
+    .let-connect-item {
+        border-radius: 6px;
+    }
 }
 @media only screen and (max-width:575px){
 

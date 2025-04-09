@@ -128,7 +128,9 @@
 .lefttext-and-rightslider-section .column-left .content-box p {
     color: #ffffff;
 }
-
+.lefttext-and-rightslider-section .column-left .content-box h4{
+    text-transform: uppercase;
+}
 .lefttext-and-rightslider-section .column-left .content-box ul li {
     display: inline-block;
     padding: 10px 20px;

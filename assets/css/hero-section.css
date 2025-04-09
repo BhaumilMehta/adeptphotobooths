@@ -153,7 +153,7 @@
 }
 
 .hero_items_wraper .hero_item .hero_items_box:hover .hero_items_bottom{
-    background: linear-gradient(320deg, #FFBF00 0%, #FF0062 100%), #000;
+    background: linear-gradient(132deg, #FF0062 26.46%, #FFBF00 80.36%);
 }
 .hero_items_wraper .hero_item .hero_items_box:hover .hero_items_top {
     background: #FF0062;

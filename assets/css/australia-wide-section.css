@@ -271,6 +271,9 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .australia-wide-section .column-left .content-box .defualt_btn {
+        width: 100%;
+    }
 }
 @media only screen and (max-width:575px){
     .name-with-time-wrap {

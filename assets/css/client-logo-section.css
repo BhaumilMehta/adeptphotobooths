@@ -2,7 +2,7 @@
     background: #000000;
     margin: 0;
     padding-top: 170px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
     overflow: hidden;
 }
 
@@ -231,9 +231,10 @@
     .client-logo-seciton .text-with-btn {
         justify-content: center;
     }
+  
     .client-logo-seciton {
         padding-top: 25px;
-        padding-bottom: 30px;
+        padding-bottom: 180px;
     }
     .client-logo .text-block .hover-box .img-wraper {
         width: 100%;

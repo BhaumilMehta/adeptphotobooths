@@ -2,7 +2,9 @@
     text-align: center;
     margin-bottom: 40px;
 }
-
+.title-with-content-repeater .title-block h2{
+    text-transform: capitalize;
+}
 .title-with-content-row {
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +12,12 @@
     margin-right: -25px;
     margin-bottom: -50px;
 }
-
+.tite-with-content-box img {
+    height: 32px;
+    width: 32px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
 .title-with-content-row .title-with-content-iner {
     width: 25%;
     padding: 0 25px;

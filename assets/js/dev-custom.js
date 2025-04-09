@@ -201,6 +201,69 @@ jQuery(document).ready(function($) {
             }
         });
     });
+    
+
+    // JQuery for the Case Study Archive page.
+
+    $(document).on('click', '.case-studies-category a', function(e) {
+        e.preventDefault();
+
+        var nextPageURL = $(this).attr('cat-slug');
+        jQuery(this).addClass('active');
+        jQuery(this).siblings().removeClass('active');
+        var newURL = '?casestudy=' + encodeURIComponent(nextPageURL);
+        console.log(newURL);
+        
+
+        window.history.pushState({href: newURL}, '', newURL);
+
+        showLoader();
+
+        $.ajax({
+            url: newURL,
+            type: 'GET',
+            success: function(response) {
+                let blogListing = $(response).find('.case-studies-post-list').html();
+                console.log(blogListing);
+                let pagination  = $(response).find('.pagination').html();
+                $('.case-studies-post-list').html(blogListing);
+                $('.pagination').html(pagination);
+
+                hideLoader(); // Hide loader after success
+            },
+            error: function(error) {
+                console.error('Error fetching page:', error);
+                hideLoader(); // Hide loader on error
+            }
+        });
+    });
+
+    $(document).on('click', '.archive-case-studies-section .pagination a.page-numbers', function(e) {
+        e.preventDefault();
+
+        var nextPageURL = $(this).attr('href');
+
+        window.history.pushState({href: nextPageURL}, '', nextPageURL);
+
+        showLoader();
+
+        $.ajax({
+            url: nextPageURL,
+            type: 'GET',
+            success: function(response) {
+                let blogListing = $(response).find('.case-studies-post-list').html();
+                let pagination  = $(response).find('.pagination').html();
+                $('.case-studies-post-list').html(blogListing);
+                $('.pagination').html(pagination);
+
+                hideLoader(); // Hide loader after success
+            },
+            error: function(error) {
+                console.error('Error fetching page:', error);
+                hideLoader(); // Hide loader on error
+            }
+        });
+    });
 
 });
 

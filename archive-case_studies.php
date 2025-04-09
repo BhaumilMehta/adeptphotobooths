@@ -153,4 +153,5 @@ get_header();
 </section>
 <!--archive-case-studies-section End -->
 <?php
+get_template_part( 'template-parts/archive' , 'contact_form_section' );
 get_footer();

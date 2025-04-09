@@ -1,15 +1,21 @@
 .case-studies-category a {
     border-radius: 10px;
-    background: #000;
+    background: transparent;
     padding: 10px 20px;
     display: inline-block;
     font-weight: 700;
     color: #FFF;
-    margin-right: 23px; 
+    margin-right: 23px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    border: 2px solid #000;
+    color: #000;
 }
-
+.case-studies-category a:hover,
+.case-studies-category a.active {
+    background-color: #000000;
+    color: #ffffff;
+}
 .case-studies-category {
     display: flex;
     justify-content: start;

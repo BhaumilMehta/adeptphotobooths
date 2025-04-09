@@ -2,6 +2,35 @@ var $ = jQuery;
 $(document).ready(function () {
   
 
+
+  /* counter js  */
+
+
+  let count = document.querySelectorAll(".count")
+let arr = Array.from(count)
+
+
+
+arr.map(function(item){
+  let startnumber = 0
+
+  function counterup(){
+  startnumber++
+  item.innerHTML= startnumber
+   
+  if(startnumber == item.dataset.number){
+      clearInterval(stop)
+  }
+}
+
+let stop =setInterval(function(){
+  counterup()
+},5)
+
+})
+
+
+
   jQuery(".popup-youtube").magnificPopup({
     type: "iframe",
     iframe: {
@@ -23,96 +52,7 @@ $(document).ready(function () {
     },
   });
 
-    /*Home testimonials Slider */
-
-
-    var $slider = jQuery(".video-testimonials-slider");
-
-    $('.video-testimonials-slider').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      arrows: true,
-      prevArrow: $('.testimonials-arrow .prev'),
-      nextArrow: $('.testimonials-arrow .next'),
-      centerMode: true,
-      centerPadding: '400px',
-      responsive: [
-        {
-          breakpoint: 1600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '300px',
-          }
-        },
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '250px',
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '200px',
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '150px',
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '40px',
-          }
-        },
-  
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  
-    });
-  
-    progress($slider);
-  
-    function progress(sliders) {
-      sliders.each(function () {
-        var slider = jQuery(this);
-        var $progressBar = slider
-          .parentsUntil(".video-testimonials-slider")
-          .find(".video-testimonials .progress");
-  
-        slider.on(
-          "beforeChange",
-          function (event, slick, currentSlide, nextSlide) {
-            var calc = ((nextSlide + 1) / slick.slideCount) * 100;
-            $progressBar.css("background-size", calc + "% 100%");
-          }
-        );
-      });
-    }
-  
-    progress($slider);
+    
 
 
   /*Header Sticky */
@@ -152,6 +92,8 @@ $(document).ready(function () {
     });
   });
 
+
+  /* Inner Banner Slider  */
   
   if ($('.inner-image-slider .image').length > 1) {
     $('.inner-image-slider').slick({
@@ -218,6 +160,8 @@ $(document).ready(function () {
     });
   });
 
+  /*Tab List Js */
+
   jQuery('.tab-list ul li').click(function () {
     var clickedElement = jQuery(this).index() + 1;
     jQuery('.tab-list-content > div').hide();
@@ -226,6 +170,9 @@ $(document).ready(function () {
     jQuery(this).addClass('active');
   });
 
+
+  /* accordion Js */
+  
   $('.accordion_question').click(function () {
     $('.accordion_answer').slideUp();
     $('.accordion_box').removeClass('active');
@@ -402,70 +349,6 @@ $(document).ready(function () {
 
 
 
-  /*Team Slider */
-
-  var $slider = jQuery(".team-post-wrap");
-
-  $('.team-post-wrap').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: $('.team_arrow .prev'),
-    nextArrow: $('.team_arrow .next'),
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-
-  });
-
-  progress($slider);
-
-  function progress(sliders) {
-    sliders.each(function () {
-      var slider = jQuery(this);
-      var $progressBar = slider
-        .parentsUntil(".team-post-wrap")
-        .find(".team-post-section .progress");
-
-      slider.on(
-        "beforeChange",
-        function (event, slick, currentSlide, nextSlide) {
-          var calc = ((nextSlide + 1) / slick.slideCount) * 100;
-          $progressBar.css("background-size", calc + "% 100%");
-        }
-      );
-    });
-  }
-
-  progress($slider);
-
-
 
 
 
@@ -560,128 +443,74 @@ $(document).ready(function () {
 
         /*title-width-content-slider */
         var $slider = jQuery(".title-with-content-row");
-
-        if ($('.title-with-content-row .title-with-content-iner').length > 4) {
-          $('.title-with-content-row').slick({
-            dots: false,
-            infinite: true,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-            prevArrow: $('.title-with-content .prev'),
-            nextArrow: $('.title-with-content .next'),
-            responsive: [
-              {
-                breakpoint: 1200,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-                }
-              },
-              {
-                breakpoint: 992,
-                settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 1
-                }
-              },
-              {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1
-                }
-              }
-            ]
-          });
-        }
-      
-        progress($slider);
-
-        function progress(sliders) {
-          sliders.each(function () {
-            var slider = jQuery(this);
-            var $progressBar = slider
-              .parentsUntil(".title-with-content-row")
-              .find(".title-with-content-repeater .progress");
-      
-            slider.on(
-              "beforeChange",
-              function (event, slick, currentSlide, nextSlide) {
-                var calc = ((nextSlide + 1) / slick.slideCount) * 100;
-                $progressBar.css("background-size", calc + "% 100%");
-              }
-            );
-          });
-        }
-      
-        progress($slider);
-
-
-        /**Why hire photo booths Slider */
-
-        var $slider = jQuery(".whyhire-photobooths-slider");
-
-                /*title-width-content-slider */
-
-                if ($('.whyhire-photobooths-slide').length > 3) {
-                  $('.whyhire-photobooths-slider').slick({
-                    dots: false,
-                    infinite: false,
-                    speed: 300,
+         
+        
+          if ($('.title-with-content-row .title-with-content-iner').length > 4) {
+            
+            let currentSlide;
+            let slidesCount;
+            let sliderCounter = document.createElement("div");
+            $('.title-with-content-row').slick({
+              dots: false,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              arrows: true,
+              prevArrow: $('.title-with-content .prev'),
+              nextArrow: $('.title-with-content .next'),
+              responsive: [
+                {
+                  breakpoint: 1200,
+                  settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-                    arrows: true,
-                    prevArrow: $('.whyhire-photobooths .prev'),
-                    nextArrow: $('.whyhire-photobooths .next'),
-                    responsive: [
-                      {
-                        breakpoint: 1400,
-                        settings: {
-                          slidesToShow: 3,
-                          slidesToScroll: 1,
-                        }
-                      },
-                      {
-                        breakpoint: 1200,
-                        settings: {
-                          slidesToShow: 2,
-                          slidesToScroll: 1
-                        }
-                      },
-                      {
-                        breakpoint: 768,
-                        settings: {
-                          slidesToShow: 1,
-                          slidesToScroll: 1
-                        }
-                      }
-                    ]
-                  });
+                    slidesToScroll: 1,
+                  }
+                },
+                {
+                  breakpoint: 992,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
                 }
-              
-                progress($slider);
+              ]
+            });
+
+
+            progress($slider);
+    
+            function progress(sliders) {
+              sliders.each(function () {
+                var slider = jQuery(this);
+                var $progressBar = slider
+                  .parentsUntil(".title-with-content-row")
+                  .find(".title-with-content-repeater .progress");
+          
+                slider.on(
+                  "beforeChange",
+                  function (event, slick, currentSlide, nextSlide) {
+                    var calc = ((nextSlide + 1) / slick.slideCount) * 100;
+                    $progressBar.css("background-size", calc + "% 100%");
+                  }
+                );
+              });
+            }
+          
+            progress($slider);
+
+          }  
         
-                function progress(sliders) {
-                  sliders.each(function () {
-                    var slider = jQuery(this);
-                    var $progressBar = slider
-                      .parentsUntil(".whyhire-photobooths-slider")
-                      .find(".whyhire-photobooths-section .progress");
-              
-                    slider.on(
-                      "beforeChange",
-                      function (event, slick, currentSlide, nextSlide) {
-                        var calc = ((nextSlide + 1) / slick.slideCount) * 100;
-                        $progressBar.css("background-size", calc + "% 100%");
-                      }
-                    );
-                  });
-                }
-              
-                progress($slider);
-        
+
+
+
         
   /*simple text slider */
 
@@ -776,7 +605,356 @@ $(document).ready(function () {
 
 
       /*Fag and Slider js */
+
+
+      /* $('.adeptphoto-question').click(function(){
+        $('.adeptphoto-answer').slideUp();
+        if($(this).parent().find('.adeptphoto-answer').is(":visible")){
+          $(this).parent().find('.adeptphoto-answer').slideUp();
+        }
+        else{
+          $(this).parent().find('.adeptphoto-answer').slideDown();
+        }
+      }) */
+
+      jQuery(document).ready(function () {
+          let currentIndex = 0;
+          let totalFaqs = jQuery(".adeptphoto-accordion-box").length;
+          let progressTime = 8000;
+          let progressTimer;
       
+          function startProgress() {
+              let progressBar = jQuery(".adeptphoto-accordion-box").eq(currentIndex).find(".progress-line");
+      
+              progressBar.css({
+                  "background-size": "0% 100%",
+                  "transition": "background-size " + (progressTime / 1000) + "s linear"
+              });
+      
+              setTimeout(() => {
+                  progressBar.css("background-size", "100% 100%");
+              }, 50);
+      
+              progressTimer = setTimeout(() => {
+                  changeFAQ('next'); 
+              }, progressTime);
+          }
+      
+          function changeFAQ(direction, newIndex = null) {
+              clearTimeout(progressTimer);
+      
+              if (newIndex !== null) {
+                  currentIndex = newIndex;
+              } else {
+                  currentIndex = (direction === 'next') 
+                      ? (currentIndex + 1) % totalFaqs 
+                      : (currentIndex - 1 + totalFaqs) % totalFaqs;
+              }
+      
+              // Remove 'active' class from all and close answers
+              jQuery(".adeptphoto-accordion-box").removeClass("active");
+              jQuery(".adeptphoto-accordion-box .adeptphoto-answer").slideUp();
+              jQuery(".progress-line").css({
+                  "background-size": "0% 100%",
+                  "transition": "none"
+              });
+      
+              // Add 'active' class to current FAQ and open it
+              let nextFaq = jQuery(".adeptphoto-accordion-box").eq(currentIndex);
+              nextFaq.addClass("active");
+              nextFaq.find(".adeptphoto-answer").slideDown();
+      
+              startProgress();
+      
+              rotateImages(direction);
+          }
+      
+          function rotateImages(direction) {
+              let leftImg = jQuery('.slide-left img').attr('src');
+              let middleImg = jQuery('.slide-middle img').attr('src');
+              let rightImg = jQuery('.slide-right img').attr('src');
+      
+              if (direction === 'next') {
+                  jQuery('.slide-left img').attr('src', middleImg);
+                  jQuery('.slide-middle img').attr('src', rightImg);
+                  jQuery('.slide-right img').attr('src', leftImg);
+              } else {
+                  jQuery('.slide-left img').attr('src', rightImg);
+                  jQuery('.slide-middle img').attr('src', leftImg);
+                  jQuery('.slide-right img').attr('src', middleImg);
+              }
+          }
+      
+          // Manual navigation using arrows
+          jQuery('.progress_next_arrow').click(function() {
+              changeFAQ('next');
+          });
+      
+          jQuery('.progress_prev_arrow').click(function() {
+              changeFAQ('prev');
+          });
+      
+          // Click on FAQ question to open it
+          jQuery(".adeptphoto-question").click(function () {
+              let clickedIndex = jQuery(this).closest(".adeptphoto-accordion-box").index();
+              if (clickedIndex !== currentIndex) {
+                  changeFAQ('next', clickedIndex);
+              }
+          });
+      
+          // Start first FAQ when page loads
+          changeFAQ('next');
+      });
+      
+      
+
+
+
+  /**Why hire photo booths Slider */
+
+    var $slider = jQuery(".whyhire-photobooths-slider");
+
+    if ($slider.length) {
+      let currentSlide;
+      let slidesCount;
+      let sliderCounter = document.createElement("div");
+    
+      if ($('.whyhire-photobooths-slide').length > 3) {
+        $('.whyhire-photobooths-slider').slick({
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: true,
+          prevArrow: $('.whyhire-photobooths .prev'),
+          nextArrow: $('.whyhire-photobooths .next'),
+          responsive: [
+            {
+              breakpoint: 1400,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+      }
+    
+      progress($slider);
+    
+      function progress(sliders) {
+        sliders.each(function () {
+          var slider = jQuery(this);
+          var $progressBar = slider
+            .parentsUntil(".whyhire-photobooths-slider")
+            .find(".whyhire-photobooths-section .progress");
+    
+          slider.on(
+            "beforeChange",
+            function (event, slick, currentSlide, nextSlide) {
+              var calc = ((nextSlide + 1) / slick.slideCount) * 100;
+              $progressBar.css("background-size", calc + "% 100%");
+            }
+          );
+        });
+      }
+    
+      progress($slider);
+    
+    }
+
+
+      
+    
+/*Home testimonials Slider */
+
+
+var $slider = jQuery(".video-testimonials-slider");
+if ($slider.length) {
+  let currentSlide;
+  let slidesCount;
+  let sliderCounter = document.createElement("div");
+
+  $('.video-testimonials-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.testimonials-arrow .prev'),
+    nextArrow: $('.testimonials-arrow .next'),
+    centerMode: true,
+    centerPadding: '300px',
+    responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '200px',
+        }
+      },
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '250px',
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '200px',
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '150px',
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: '40px',
+        }
+      },
+  
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  
+  });
+  
+  progress($slider);
+  
+  function progress(sliders) {
+    sliders.each(function () {
+      var slider = jQuery(this);
+      var $progressBar = slider
+        .parentsUntil(".video-testimonials-slider")
+        .find(".video-testimonials-section .progress");
+  
+      slider.on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var calc = ((nextSlide + 1) / slick.slideCount) * 100;
+          $progressBar.css("background-size", calc + "% 100%");
+        }
+      );
+    });
+  }
+  
+  progress($slider);
+
+}
+
+
+
+
+  /*Team Slider */
+
+  var $slider = jQuery(".team-post-wrap");
+
+  if ($slider.length) {
+    let currentSlide;
+    let slidesCount;
+    let sliderCounter = document.createElement("div");
+
+    $('.team-post-wrap').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: $('.team_arrow .prev'),
+      nextArrow: $('.team_arrow .next'),
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+  
+    });
+  
+    progress($slider);
+  
+    function progress(sliders) {
+      sliders.each(function () {
+        var slider = jQuery(this);
+        var $progressBar = slider
+          .parentsUntil(".team-post-wrap")
+          .find(".team-post-section .progress");
+  
+        slider.on(
+          "beforeChange",
+          function (event, slick, currentSlide, nextSlide) {
+            var calc = ((nextSlide + 1) / slick.slideCount) * 100;
+            $progressBar.css("background-size", calc + "% 100%");
+          }
+        );
+      });
+    }
+  
+    progress($slider);
+  }
+
+  
+
+  
+
+
 
 });
 

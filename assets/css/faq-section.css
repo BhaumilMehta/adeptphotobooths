@@ -64,9 +64,9 @@
     padding: 0 40px 25px 40px;
 }
 
-.accordion_box:first-child .accordion_answer {
+/* .accordion_box:first-child .accordion_answer {
     display: block;
-}
+} */
 
 .accordion_answer p{
     color: #000000;
@@ -99,9 +99,9 @@
     background-image: url('../images/minus-icon.svg');
 }
 
-.accordion_box:first-child .accordion_answer {
+/* .accordion_box:first-child .accordion_answer {
     display: block;
-}
+} */
 .faq-section.bg-white {
     background: transparent;
 }

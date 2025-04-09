@@ -245,12 +245,12 @@ a:visited {
     justify-content: space-between;
 }
 
-a:hover,
-a:focus,
-a:active {
+a:hover{
     color: #FFBF00;
 }
-
+a:focus,a:active {
+    color: unset;
+}
 .gradient {
     background: linear-gradient(90deg, #FFBF00 0%, #FF0062 100%), #000;
 }
@@ -735,7 +735,7 @@ body .ff-default .ff-el-input--label label {
     margin-top: 44px;
 }
 .bg-black .progress {
-    background: rgba(255, 255, 255, 0.20);
+    background-color: rgba(255, 255, 255, 0.20);
 }
 .progress {
     position: relative;
@@ -853,8 +853,140 @@ body .ff-message-success {
 
 
 
+/*google reviews csss*/
+
+.googlereviews-section {
+    margin-bottom: 80px;
+    position: relative;
+}
+.googlereviews-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.googlereviews-left {
+    width: 17%;
+    text-align: center;
+    position: relative;
+}
+.googlereviews-left:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -190px;
+    left: 0;
+    height: 600px;
+    width: 600px;
+    margin-left: calc(-110vw / 2 + 1000px / 2);
+    background-image: url(../images/googlereviews-Intersect.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.googlereviews-right {
+    width: 75%;
+}
+
+.googlereviews-left .counter {
+    font-size: 35.586px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.googlereviews-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-left,.reviews-right {
+    width: 49px;
+    height: 49px;
+    padding: 16px;
+    border-radius: 24.5px;
+    border: 2px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+.es-main-container .es-review-background-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 6px;
+}
+
+.es-main-container  .es-review-content-line-shortener {
+    max-height: unset !important;
+}
+.es-main-container .es-review-content-text {
+    height: 220px;
+    overflow-y: auto;
+    padding-right: 15px;
+    font-size: 18px;
+    line-height: normal;
+    color: #2D2D2D;
+    font-weight: 300;
+}
+.es-main-container .es-review-content-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.es-main-container .es-review-content-text::-webkit-scrollbar-thumb {
+    border-radius: 11.406px;
+    background: linear-gradient(180deg, #FFBF00 0%, #FF0062 186.14%);
+}
+
+.es-main-container .es-review-content-text::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 11.406px;
+}
+.es-main-container .es-review-author-block-avatar-link {
+    position: absolute !important;
+
+    border-radius: 20px;
+    background: #FFF;
+    top: -6px;
+    right: -6px;
+    z-index: 6666666;
+}
+
+.es-main-container .es-review-author-block-avatar-link .es-review-avatar-container {
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+.es-main-container .es-review-author-name {
+    font-size: 24px;
+    color: #FF3700;
+}
+.es-main-container  .es-review-align-container {
+    margin-left: 0;
+}
+/*404 Page Design*/
 
 
+.error-404 .content_block {
+    text-align: center;
+}
+.error-404 .content_block h1.page-title {
+    font-size: 160px;
+    margin: 0;
+    text-shadow: 1px 1px 1px #FF0062, 2px 2px 1px #FF0062, 3px 3px 1px #FF0062, 4px 4px 1px #FF0062, 5px 5px 1px #FF0062, 6px 6px 1px #F60, 7px 7px 1px #FF0062, 8px 8px 1px #FF0062, 25px 25px 8px rgba(0, 0, 0, 0.2);
+    color: #FFBF00;
+}
+
+.error-404.not-found {
+    background: #000000;
+    padding: 80px 0;
+    margin: 0;
+}
+.error-404 .content_block p {
+    color: #FFBF00;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
 /*************************************************
                  header Css
 *************************************************/
@@ -993,7 +1125,9 @@ header .topbar {
     font-size: 16px;
     transition: all 0.6s;
 }
-
+.header-navigation .menu li > a:hover:not(.sub-menu li a){
+   color: #FFBF00;
+}
 .toggle {
     background: #FFBF00;
     height: 45px;
@@ -1034,7 +1168,7 @@ header .topbar {
     position: absolute;
     margin-left: 0;
     min-width: 250px;
-    background: linear-gradient(90deg, #FFBF00 0%, #FF0062 100%);
+    background: #FFBF00;
     top: 100%;
     border-radius: 5px;
     visibility: hidden;
@@ -1042,7 +1176,9 @@ header .topbar {
     overflow: hidden;
     z-index: 2;
 }
-
+.header-navigation .menu li .sub-menu li a {
+    transition: unset;
+}
 .sub-menu li {
     display: block;
 }
@@ -1255,7 +1391,7 @@ header .topbar {
     }
 
     .header-navigation .sub-menu li a:hover {
-        background: #FFBF00;
+        background: linear-gradient(-45deg, #FFBF00 0%, #FF0062 100%);
     }
     .mobile_btn {
         display: none;
@@ -1273,9 +1409,14 @@ header .topbar {
     .container {
         max-width: 1248px
     }
-
+    .googlereviews-shape {
+        margin-left: calc(-110vw / 2 + 990px / 2);
+    }
     .site-header .container {
         max-width: 1308px;
+    }
+    .googlereviews-slider {
+        margin-right: calc(-110vw / 2 + 1248px / 2);
     }
 }
 
@@ -1293,6 +1434,10 @@ header .topbar {
     }
     .event-cta {
         padding: 20px 80px;
+    }
+
+    .googlereviews-slider {
+        margin-right: calc(-110vw / 2 + 1140px / 2);
     }
     /*************************************************
                  Header Css
@@ -1356,7 +1501,9 @@ header .topbar {
     p {
         font-size: 16px;
     }
-
+    .error-404 .content_block h1.page-title {
+        font-size: 120px;
+    }
 
     h1, .h1{
         font-size: 50px;
@@ -1383,6 +1530,9 @@ header .topbar {
     }
     .event-cta {
         padding: 20px;
+    }
+    .googlereviews-slider {
+        margin-right: calc(-110vw / 2 + 960px / 2);
     }
    /*progress Bar*/
 
@@ -1451,8 +1601,8 @@ header .topbar {
         margin-top: 20px;
     }
 
-    .event-cta {
-        text-align: center;
+    .error-404 .content_block h1.page-title {
+        font-size: 100px;
     }
     .event-cta .cta-wrapper {
         flex-direction: column;
@@ -1467,6 +1617,40 @@ header .topbar {
     .event-cta .cta-wrapper > div {
         padding: 0;
     }
+
+
+    .googlereviews-left {
+        width: 100%;
+    }
+    .googlereviews-right {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .googlereviews-left:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 340px;
+        width: 340px;
+        margin-left: 0;
+        background-image: url(../images/googlereviews-Intersect.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: 0;
+        margin: auto;
+        transform: translateY(-50%);
+    }
+    .googlereviews-slider {
+        margin-right: calc(-110vw / 2 + 720px / 2);
+    }
+    .googlereviews-section {
+
+        margin-top: 120px;
+    }
+
+
     /*************************************************
                  Header Css
     *************************************************/
@@ -1580,6 +1764,14 @@ header .topbar {
     /*************************************************
                  Footer  Css
     *************************************************/
+    .footer-bottom-row a {
+        margin-top: 30px;
+        display: block;
+    }
+    .footer-bottom-row {
+        display: block;
+        text-align: center;
+    }
     .footer-logo {
         text-align: left;
         margin-bottom: 55px;
@@ -1688,7 +1880,11 @@ header .topbar {
         width: 100%;
     }
 }
-
+@media only screen and (max-width:575px) {
+    .googlereviews-slider {
+        margin-right: -24px;
+    }
+}
 @media only screen and (max-width:374px) {
     .footer-info .user-info a {
         font-size: 13px;
@@ -1719,6 +1915,13 @@ header .topbar {
 
     .footer-bottom-row p {
         margin-bottom: 40px;
+    }
+    .googlereviews-left:before {
+        height: 320px;
+        width: 320px;
+    }
+    .googlereviews-left .counter {
+        font-size: 26px;
     }
 
 }
